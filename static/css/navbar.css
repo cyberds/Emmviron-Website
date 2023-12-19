@@ -1,0 +1,146 @@
+.logo img{
+    width: 120px;
+}
+
+nav {
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+nav a, nav {
+    color: black;
+    font-size: medium;
+}
+
+nav a:hover {
+    background: rgb(35, 35, 142);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+    transition: ease-in-out 0.4s;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.ham1 {
+    width: 40px;
+    height: 8px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+.ham2 {
+    width: 30px;
+    height: 8px;
+    background-color:rgb(35, 35, 142);
+    border-radius: 5px;
+}
+
+.ham3 {
+    width: 20px;
+    height: 8px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+.ham2:hover {
+    width: 40px;
+    transition: ease-in 0.2s;
+}
+
+.ham1:hover {
+    width: 20px;
+    transition: ease-in 0.2s;
+}
+
+.offcanvas {
+    display: none;
+}
+
+
+
+@media (max-width: 750px){
+    body {
+        padding-top: unset;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .hamburger {
+        display: grid;
+        gap: 3px;
+    }
+
+    .menu, .contact-button{
+        display: none;
+    }
+
+    .offcanvas {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.685);
+        color: white;
+        width: 80vw;
+        height: 100vh;
+        position: fixed;
+        top: 75px;
+        right: 0; /* Initially offscreen to the right */
+        padding: 40px;
+        z-index: 10000;
+        transition: 0.5s;
+        
+    }
+
+    .offcanlinkCover {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .offcanlink {
+        margin-left: 10px;
+        border-bottom: 2px dotted; /* Add dotted lines below all offcanlink items */
+        color: white;
+        text-decoration: none;
+        padding-bottom: 5px;
+    }
+
+
+    .offcanlink:last-child {
+        border-bottom: none;
+        text-decoration: none;
+      }
+
+    .offcanvas .btn {
+        width: 20vw;
+        text-align: left;
+    }
+
+    .hamoverlay {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.082);
+        width: 150vw;
+        height: 100vh;
+        position: fixed;
+        top: 75px;
+        z-index: 1000;
+        transition: ease-in 2s;
+    }
+}

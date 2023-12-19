@@ -1,0 +1,51 @@
+body {
+    padding-top: 30px;
+    background-color: #F6F5F5;;
+    color: rgb(34, 34, 34);
+}
+
+.navbar-brand img{
+    height: 20px;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+
+.CTAbtns {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTAbtns div {
+    width: 115px;
+    padding: 13px 9px;
+    border-radius: 8px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.CTAbtn1 {
+    background: #E6E51E;
+}
+
+.CTAbtn2 {
+    border-color: white;
+    border-style: inset;
+    border-width: 3px;
+    color: white;
+}
+
+.CTAbtn2:hover, .CTAbtn1:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    transition: ease 0.5s;
+}
