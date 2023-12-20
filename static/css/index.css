@@ -41,7 +41,53 @@
     width: 80%;
 }
 
+.afterhero h6{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
 
 .impact-delivered {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.impact-delivered h5 {
+    font-weight: bolder;
+}
+
+
+.impact-delivered div {
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.impact-delivered div .picture{
+    border-radius: 20px;
+    width: 150px;
+    height: 120px;
+}
+
+.impact-delivered .impact1 .picture1 {
+    background: url('/static/img/home_picture1.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.impact1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E51E;
+    color: black;
+    width: 262px;
+    height: 300px;
     
+}
+
+.impact1 p {
+    max-width: 80%;
 }
