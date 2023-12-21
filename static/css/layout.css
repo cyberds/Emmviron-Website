@@ -13,6 +13,9 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
+span {
+    font-weight: bold;
+}
 
 .CTAbtns {
     display: flex;

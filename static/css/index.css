@@ -68,7 +68,7 @@
 }
 
 .impact-delivered p {
-    line-height: 17px;
+    line-height: 21.984px;
 }
 
 
@@ -97,7 +97,7 @@
 }
 
 .impact2 .picture2 {
-    background-image: url(https://ik.imagekit.io/s3jkgwyie/home_picture1.png?updatedAt=1703064530697);
+    background-image: url(https://ik.imagekit.io/s3jkgwyie/f1fb482f60dfc847681f9b28401e93f9.jpg?updatedAt=1703084003590);
     background-size: cover;
     background-position: center;
     background-color: black;
@@ -132,5 +132,49 @@
     z-index: 1;
     top: 0;
     left: 0;
+    padding: 20px;
+    display: grid;
+    row-gap: 20px;
 }
 
+.inner p{
+    color: white;
+    font-size: 18px;
+    max-width: 90%;
+    
+}
+
+.inner p span{
+    font-weight: bold;
+}
+
+
+#thunderbolt, #certificate {
+    height: 50px;
+}
+
+
+.lower-deck {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-deck-inner {
+    margin-top: -30px;
+    background: #E6E51E;
+    width: 156px;
+    height: 120px;
+    padding: 10px ;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #000 !important;
+
+}
+
+.lower-deck .lower-deck-inner{
+    color: #000 !important; 
+}
+
+.lower-deck .lower-deck-inner span {
+    font-weight: bold;
+}
