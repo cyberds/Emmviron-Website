@@ -11,6 +11,10 @@ hr {
     margin: 0 -40px;
 }
 
+.orangebtn {
+    background-color: #E6E51E !important;
+}
+
 /* home hero section */
 .hero {
     display: flex;
@@ -346,6 +350,8 @@ hr {
     width: 90%;
     padding: 47px;
     color: white;
+    display: grid;
+    gap: 20px;
 }
 
 .our-services h4 {
@@ -427,4 +433,284 @@ hr {
     width: fit-content;
     padding: 10px 0;
     align-items: center;
+}
+
+.newsandevents {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.newsandevents h4 {
+    color: #00599B;
+}
+
+.newsholder {
+    font-weight: bolder;
+    font-size: small;
+    gap: 20px;
+}
+
+.eachnewsholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+}
+
+.eachnewsholder p{
+    max-width: 80%;
+}
+
+.newsIMG {
+    border-radius: 14px;
+    width: 200px;
+    height: 200px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#newsIMG1 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/8fe8ff81a624bdf066635b18cff0d8e8.png?updatedAt=1703351095849');
+}
+
+#newsIMG2 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/5dfd9f242dfc8afcce60722521c5bfb1.png?updatedAt=1703351139301');
+}
+
+#newsIMG3 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/c8e75fa0764bf03bd1aaad884ab37e16.png?updatedAt=1703351143115');
+}
+
+#newsIMG4 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/Ogun%20Business%20Summit.jpeg?updatedAt=1703165880673');
+}
+
+.forvideos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.vidholder {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.vidholder div {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+#video1 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/885aeb5825bd3d91bab4ef43e5533673.png?updatedAt=1703353137415');
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.playbtndiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease .3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    font-size: larger;
+    opacity: 0; /* Initially hidden */
+}
+
+.vidholder:hover .playbtndiv {
+    opacity: 1; /* Display on hover */
+}
+
+.playbtndiv:hover {
+    cursor: pointer;
+}
+
+.videosOnYouTube {
+    border-radius: 17px;
+    min-height: 300px;
+    width: 90%;
+    background: linear-gradient(97deg, #00599B 14.12%, #0880D7 89.68%);
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    color: white;
+    text-align: center;
+}
+
+.forvideos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.vidholder div {
+    width: 160px;
+    height: 160px;
+    border-radius: 13px;
+}
+
+.youtubebtn {
+    border: white 2px solid;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: baseline;
+    width: 220px;
+    justify-self: center;
+    transition: ease .5s;
+    text-decoration: none !important;
+    color: white;
+} 
+
+.youtubebtn:hover {
+    color: #00599B !important;
+    background-color: white;
+    cursor: pointer;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.vidholder {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+#video1 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/885aeb5825bd3d91bab4ef43e5533673.png?updatedAt=1703360818945') !important;
+    background-size: cover !important;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#video2 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/c62821d959e3076f9ce1f8e512c9d639.png?updatedAt=1703353154086') !important;
+    background-size: cover !important;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#video3 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/46151b432c248592ea6efcce9a2fc033.png?updatedAt=1703361096194') !important;
+    background-size: cover !important;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#video4 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/289ca19cd452b913321d06ab8f82aacf.png?updatedAt=1703353148369') !important;
+    background-size: cover !important;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#video5 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/47b67572e78e5b9dc96679ae53bbe54e.png?updatedAt=1703353140746') !important;
+    background-size: cover !important;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#video6 {
+    background: url('https://ik.imagekit.io/s3jkgwyie/5f843c2122116a2c8c73ff69b0f57e1c.png?updatedAt=1703353154037') !important;
+    background-size: cover !important;
+    background-position: center center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.playbtndiv {
+    transition: ease .3s;
+    color: white !important;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidholder:hover .video-overlay {
+    display: flex;
+}
+
+
+.mediafeatured {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    padding-bottom:30px;
+    border-bottom: 2px dashed #9f9f9f;
+}
+
+.mediafeaturedwriteup h4 {
+    color:#00599B;
+}
+
+.mediafeaturedwriteup p {
+    max-width: 80%;
+}
+
+.mediafeaturedlogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    
+}
+
+.mediafeaturedlogos img {
+    height: 30px;
+}
+
+.belowMedia {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.belowMedia p {
+    text-align: center !important;
 }
