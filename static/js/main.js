@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       {
         title: "Emmviron offers expert guidance to help companies make informed decisions, plan for the future, and achieve long-term success",
-        description: "you're a new startup, a small business aiming for growth, or a large company seeking innovation, our approach to creating business solutions will help you gain valuable insights and exceed your expectations. Join us on this path to success"
+        description: "Whether you're a new startup, a small business aiming for growth, or a large company seeking innovation, our approach to creating business solutions will help you gain valuable insights and exceed your expectations. Join us on this path to success"
     }
   ];
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
   changeText();
 
   // Change text every 4 seconds
-  setInterval(changeText, 4000);
+  setInterval(changeText, 10000);
 });
 
 

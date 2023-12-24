@@ -136,7 +136,7 @@ nav a:hover {
     .hamoverlay {
         display: none;
         background-color: rgba(0, 0, 0, 0.082);
-        width: 150vw;
+        width: 1500px;
         height: 100vh;
         position: fixed;
         top: 75px;

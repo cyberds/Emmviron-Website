@@ -144,6 +144,13 @@ hr {
     padding: 10px;    
 }
 
+.impact3mobile {
+    background-color:rgb(73, 106, 241);
+    padding: 20px;
+    font-size: 13px;
+    display: none !important;
+}
+
 .impact3 {
     position: relative;
 }
@@ -709,8 +716,123 @@ hr {
     width: 80%;
     padding: 20px;
     margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .belowMedia p {
     text-align: center !important;
+}
+
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 768px) {
+    body {
+        gap: 20px;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .hero {
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    .heroh1{
+        max-width: 100vw !important;
+        padding-bottom: 5px;
+    }
+
+    .herobackground, .herorectangle {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .herorectangle {
+        padding: 10px;
+    }
+
+    .afterhero{
+        margin-top: -60px;
+    }
+    .impact-delivered {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .impact1, .impact2, .impact3 {
+        /* animation: none; */
+        margin-bottom: 20px;
+    }
+
+    .impact3mobile {
+        display: flex !important;
+    }
+
+    .impact3 {
+        display: none;
+    }
+
+    .our-clients, .partner-block {
+        width: 100vw;
+        flex-wrap: wrap;
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .our-client-logos {
+        gap: 20px 40px;
+    }
+
+    .partner-block {
+        width: unset;
+        gap: 20px;
+    }
+
+    .partner-block h4, .partner-block p{
+        max-width: 80vw;
+    }
+
+    .partner-block-icons {
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .our-services {
+        width: 100vw;
+    }
+
+    .our-services h4, .our-services p {
+        text-align: center;
+    }
+
+    .service-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-cards p {
+        text-align: left;
+    }
+
+    .newsandevents {
+        width: 90vw;
+    }
+
+    .newsholder {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .forvideos {
+        flex-wrap: wrap;
+    }
+
+    .mediafeatured {
+        flex-wrap: wrap;
+        
+    }
+    
 }
