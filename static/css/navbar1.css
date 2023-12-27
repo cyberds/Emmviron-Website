@@ -143,4 +143,8 @@ nav a:hover {
         z-index: 1000;
         transition: ease-in 2s;
     }
+    
+    .partner-block-icons {
+        gap: 20px 14px;
+    }
 }

@@ -702,12 +702,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
 }
 
 .mediafeaturedlogos img {
-    height: 30px;
+    height: 50px;
 }
 
 .belowMedia {
@@ -782,10 +781,6 @@ hr {
         justify-content: center;
     }
 
-    .our-client-logos {
-        gap: 20px 40px;
-    }
-
     .partner-block {
         width: unset;
         gap: 20px;
@@ -797,7 +792,7 @@ hr {
 
     .partner-block-icons {
         flex-wrap: wrap;
-        width: 60%;
+        width: 100vw;
     }
 
     .our-services {
@@ -832,7 +827,21 @@ hr {
 
     .mediafeatured {
         flex-wrap: wrap;
-        
+        text-align: center;
+        justify-content: center;
+    }
+
+    .mediafeaturedlogos {
+        justify-content: center;
+    }
+
+    .mediafeaturedwriteup {
+        display: grid;
+        justify-content: center;
+    }
+
+    .mediafeaturedwriteup p {
+        justify-self: center;
     }
     
 }
