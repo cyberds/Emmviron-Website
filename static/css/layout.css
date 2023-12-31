@@ -79,11 +79,28 @@ span {
     
 }
 
+.belowMedia {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    justify-self: center;
+    border-top: 1.5px dashed #B9BBBC;
+    padding-top: 40px;
+}
+
+.belowMedia p {
+    text-align: center !important;
+}
+
 footer {
     background-color: black;
     border-radius: 17px;
     display: grid;
     justify-content: space-around;
+    justify-self: center;
     width: 95vw;
     margin-bottom: 30px;
     padding: 100px 52px;
