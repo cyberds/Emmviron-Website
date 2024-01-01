@@ -687,7 +687,6 @@ hr {
     width: 80%;
     padding: 20px;
     padding-bottom:30px;
-    border-bottom: 2px dashed #9f9f9f;
 }
 
 .mediafeaturedwriteup h4 {
@@ -708,20 +707,6 @@ hr {
 .mediafeaturedlogos img {
     height: 50px;
 }
-
-.belowMedia {
-    display: grid;
-    gap: 20px;
-    width: 80%;
-    padding: 20px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-
-.belowMedia p {
-    text-align: center !important;
-}
-
 
 /* Mobile Responsiveness */
 
@@ -844,4 +829,21 @@ hr {
         justify-self: center;
     }
     
+}
+
+
+@media(max-width: 500px) {
+    .vidholder, .vidholder div {
+        width: 80vw;
+        height: 184px;
+    }
+
+    .vidholder .playbtndiv {
+        opacity: 1;
+        background-color: rgba(0, 27, 199, 0.244);
+    }
+
+    #video1 {
+        background-position: right;
+    }
 }

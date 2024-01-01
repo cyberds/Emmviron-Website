@@ -79,6 +79,7 @@ nav a:hover {
 
     nav {
         justify-content: space-between;
+        justify-self: center;
         padding: 5%;
     }
 
