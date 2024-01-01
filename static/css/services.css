@@ -11,6 +11,26 @@ h4 {
     font-size: 18px;
 }
 
+.fit-content {
+    height: fit-content;
+}
+
+.width-47 {
+    width: 47% !important;
+}
+
+.height-auto {
+    height: auto !important;
+}
+
+.black-txt {
+    color: black;
+}
+
+.vw-80 {
+    width: 80vw !important;
+}
+
 .services-hero {
     width: 80vw;
     display: flex;
@@ -95,6 +115,29 @@ h4 {
     background-size: cover;
 }
 
+.market-research-others {
+    width: 80vw;
+    gap: 25px;
+    display: grid;
+}
+
+.wide-card {
+    min-height: 200px;
+    width: 100%;
+}
+
+.how_we_provide {
+    display: grid;
+    gap: 25px;
+    width: 80vw;
+}
+
+.how_we_provide_cards {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
 @media (max-width: 768px) {
     body {
         gap: 30px;
@@ -120,5 +163,19 @@ h4 {
         justify-items: center;
         max-width: 90vw;
         gap: 25px;
+    }
+
+    .width-47 {
+        width: 100% !important;
+    }
+
+    .how_we_provide_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .how_we_provide_cards .services-cards {
+        width: 80vw;
     }
 }
