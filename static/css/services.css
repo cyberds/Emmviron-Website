@@ -85,4 +85,40 @@ h4 {
 
 #business_plan_bottom_photo {
     background-image: url('https://ik.imagekit.io/s3jkgwyie/c48eadb37b9e17b746d0bbcfb31a5c0e.jpg?updatedAt=1704108768733');
+    background-position: center;
+    background-size: cover;
+}
+
+#pitch_deck_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/1558377be8549cc91375b6d1eeca4992.jpg?updatedAt=1704110757653');
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    body {
+        gap: 30px;
+    }
+    .services-hero {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 95vw;
+        padding: 17px;
+        border-radius: 10px;
+    }
+
+    .services-hero-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .section2-services-we-provide .center {
+        text-align: center !important;
+    }
+
+    .section2-services-we-provide {
+        justify-items: center;
+        max-width: 90vw;
+        gap: 25px;
+    }
 }
