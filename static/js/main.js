@@ -1,9 +1,7 @@
 // navbar script
-function OpenMenu() {
+function toggleOffcanvas() {
     var offcanvas = document.querySelector('.offcanvas');
     var hamoverlay = document.querySelector('.hamoverlay');
-
-    changeHamburgerToClose();
     
     // Toggle the display property
     offcanvas.style.display = (offcanvas.style.display === 'flex') ? 'none' : 'flex';
