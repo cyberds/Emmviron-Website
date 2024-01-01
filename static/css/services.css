@@ -1,6 +1,88 @@
 body {
     display: grid;
     gap: 60px;
-    justify-content: space-around;
+    justify-items: center;
     width: 100vw;
+}
+
+h4 {
+    font-weight: 700;
+    color:#00599B;
+    font-size: 18px;
+}
+
+.services-hero {
+    width: 80vw;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 70px;
+    border-radius: 32px;
+    background: linear-gradient(71deg, #00599B 25.13%, #118BE5 83.86%);
+    color: white;
+    text-align: justify;
+    padding: 60px;
+}
+
+.services-hero-writeup {
+    width: 480px;
+}
+
+.services-hero h2 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.services-hero-img {
+    width: 200px;
+    height: auto;
+    border-radius: 18px;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+
+.business_plan_top_img {
+    background: url('https://ik.imagekit.io/s3jkgwyie/2d6a773e9c4908ba6921c5f4a476b884.jpg?updatedAt=1704108378617');
+    background-position: center;
+    background-size: cover;
+}
+
+.section2-services-we-provide {
+    gap: 35px;
+    display: grid;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    gap: 21px;
+    justify-content: center;
+}
+
+.services-cards {
+    height: auto;
+    min-height: 320px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 32px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom-photo {
+    width: 90%;
+    height: 409px;
+    border-radius: 32px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#business_plan_bottom_photo {
+    background-image: url('https://ik.imagekit.io/s3jkgwyie/c48eadb37b9e17b746d0bbcfb31a5c0e.jpg?updatedAt=1704108768733');
 }
