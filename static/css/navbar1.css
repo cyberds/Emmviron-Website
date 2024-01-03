@@ -79,6 +79,7 @@ nav a:hover {
 
     nav {
         justify-content: space-between;
+        justify-self: center;
         padding: 5%;
     }
 
@@ -100,12 +101,12 @@ nav a:hover {
         width: 80vw;
         height: 100vh;
         position: fixed;
-        top: 75px;
-        right: 0; /* Initially offscreen to the right */
+        top: 0;
+        right: 0;
         padding: 40px;
+        padding-top: 102px;
         z-index: 10000;
         transition: 0.5s;
-        
     }
 
     .offcanlinkCover {
@@ -136,11 +137,16 @@ nav a:hover {
     .hamoverlay {
         display: none;
         background-color: rgba(0, 0, 0, 0.082);
-        width: 150vw;
+        width: 1500px;
         height: 100vh;
         position: fixed;
-        top: 75px;
+        top: 0;
+        right: 0;
         z-index: 1000;
         transition: ease-in 2s;
+    }
+    
+    .partner-block-icons {
+        gap: 20px 14px;
     }
 }

@@ -1,0 +1,181 @@
+body {
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    width: 100vw;
+}
+
+h4 {
+    font-weight: 700;
+    color:#00599B;
+    font-size: 18px;
+}
+
+.fit-content {
+    height: fit-content;
+}
+
+.width-47 {
+    width: 47% !important;
+}
+
+.height-auto {
+    height: auto !important;
+}
+
+.black-txt {
+    color: black;
+}
+
+.vw-80 {
+    width: 80vw !important;
+}
+
+.services-hero {
+    width: 80vw;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 70px;
+    border-radius: 32px;
+    background: linear-gradient(71deg, #00599B 25.13%, #118BE5 83.86%);
+    color: white;
+    text-align: justify;
+    padding: 60px;
+}
+
+.services-hero-writeup {
+    width: 480px;
+}
+
+.services-hero h2 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.services-hero-img {
+    width: 200px;
+    height: auto;
+    border-radius: 18px;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+
+.business_plan_top_img {
+    background: url('https://ik.imagekit.io/s3jkgwyie/2d6a773e9c4908ba6921c5f4a476b884.jpg?updatedAt=1704108378617');
+    background-position: center;
+    background-size: cover;
+}
+
+.section2-services-we-provide {
+    gap: 35px;
+    display: grid;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    gap: 21px;
+    justify-content: center;
+}
+
+.services-cards {
+    height: auto;
+    min-height: 320px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 32px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom-photo {
+    width: 90%;
+    height: 409px;
+    border-radius: 32px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#business_plan_bottom_photo {
+    background-image: url('https://ik.imagekit.io/s3jkgwyie/c48eadb37b9e17b746d0bbcfb31a5c0e.jpg?updatedAt=1704108768733');
+    background-position: center;
+    background-size: cover;
+}
+
+#pitch_deck_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/1558377be8549cc91375b6d1eeca4992.jpg?updatedAt=1704110757653');
+    background-position: center;
+    background-size: cover;
+}
+
+.market-research-others {
+    width: 80vw;
+    gap: 25px;
+    display: grid;
+}
+
+.wide-card {
+    min-height: 200px;
+    width: 100%;
+}
+
+.how_we_provide {
+    display: grid;
+    gap: 25px;
+    width: 80vw;
+}
+
+.how_we_provide_cards {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        gap: 30px;
+    }
+    .services-hero {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 95vw;
+        padding: 17px;
+        border-radius: 10px;
+    }
+
+    .services-hero-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .section2-services-we-provide .center {
+        text-align: center !important;
+    }
+
+    .section2-services-we-provide {
+        justify-items: center;
+        max-width: 90vw;
+        gap: 25px;
+    }
+
+    .width-47 {
+        width: 100% !important;
+    }
+
+    .how_we_provide_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .how_we_provide_cards .services-cards {
+        width: 80vw;
+    }
+}
