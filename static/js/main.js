@@ -86,3 +86,25 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+function hideClassInIframe() {
+    // Get the iframe element
+    var iframe = document.getElementById('myIframe');
+  
+    // Check if the iframe is loaded
+    if (iframe) {
+      iframe.onload = function() {
+        // Access the content of the iframe
+        var iframeContent = iframe.contentDocument || iframe.contentWindow.document;
+  
+        // Hide the elements with the specified class
+        var elementsToHide = iframeContent.getElementsByClassName('footerContainer-156e0');
+        for (var i = 0; i < elementsToHide.length; i++) {
+          elementsToHide[i].style.display = 'none';
+        }
+      };
+    }
+  }
+  
+  // Call the function once the main page is loaded
+  window.onload = hideClassInIframe;

@@ -15,14 +15,43 @@ nav a, nav {
     font-size: medium;
 }
 
+nav .menu a {
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav a:hover {
-    background: rgb(35, 35, 142);
+    background: #128AC9;
     color: white;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    padding: 2px 5px;
-    transition: ease-in-out 0.4s;
+    padding: 8px;
+    margin-top: 5px;
+    transition: ease-in-out 0.6s;
+}
+
+nav .logo a:hover {
+    background: transparent;
+    opacity: .4;
+}
+
+nav span {
+    font-weight: normal;
+}
+
+nav .menu a i {
+    display: none;    
+}
+
+nav a:hover i {
+    display: initial;    
+}
+
+nav a:hover span {
+    display: none;
 }
 
 .menu {
