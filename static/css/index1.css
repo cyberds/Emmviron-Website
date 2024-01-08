@@ -468,6 +468,11 @@ hr {
     gap: 10px;
 }
 
+.eachnewsholder:hover {
+    opacity: .5;
+    text-decoration: none;
+}
+
 .eachnewsholder p{
     max-width: 80%;
 }

@@ -115,6 +115,36 @@ h4 {
     background-size: cover;
 }
 
+#fin_model_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/1ea7a2dc56afcc24f02cde5cefb2f0c4.jpg?updatedAt=1704666563399');
+    background-position: center;
+    background-size: cover;
+}
+
+#market_research_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/151fe450d765dcb55fc6edb3e79709e3.jpg?updatedAt=1704666824107');
+    background-position: center;
+    background-size: cover;
+}
+
+#operational_setup_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/b8b7c389a4669acf53c792134b491481.jpg?updatedAt=1704666548443');
+    background-position: center;
+    background-size: cover;
+}
+
+#talent_n_recruitment_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/32833c677e1b65d8638da00c80632f86.jpg?updatedAt=1704667152869');
+    background-position: center;
+    background-size: cover;
+}
+
+#strategic_business_bottom_photo {
+    background: url('https://ik.imagekit.io/s3jkgwyie/c5a3a823b456280754a4550213eeae3b.jpg?updatedAt=1704667150826');
+    background-position-y: top;
+    background-size: cover;
+}
+
 .market-research-others {
     width: 80vw;
     gap: 25px;

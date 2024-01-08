@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
 
     <!-- fontawesome installation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -16,8 +17,9 @@
     <!-- Local CSS/JavaScript installation -->
     <link rel="stylesheet" href="../static/css/layout.css">
     <link rel="stylesheet" href="../static/css/navbar1.css">
-    <link rel="stylesheet" href="../static/css/contact.css">
+    <link rel="stylesheet" href="../static/css/career.css">
     <script src="../static/js/main.js" defer></script>
+    <script src="../static/js/jobOpening.js" defer></script>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
@@ -42,13 +44,16 @@
           <a class="dropdown-item" href="pitch_deck.html">Pitch Deck</a>
           <a class="dropdown-item" href="financial_model.html">Financial Model</a>
           <a class="dropdown-item" href="market_research.html">Market Research</a>
+          <a class="dropdown-item" href="talent_n_recruitment.html">Talent and Recruitment</a>
+          <a class="dropdown-item" href="strategic_business.html">Strategic Business Advisory</a>
+          <a class="dropdown-item" href="operational_setup.html">Operational Setup</a>
         </div>
       <a href="https://emmviron.medium.com"><span>Blog</span> <i class="fa-brands fa-medium"></i></a>
       <a href="career.html"><span>Career</span> <i class="fa-solid fa-briefcase"></i></a>
     </div>
 
     <div class="contact-button">
-      <a href="#" class="btn btn-primary btn-sm">Contact Us <i class="fa-solid fa-address-book"></i></a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Contact Us <i class="fa-solid fa-address-book"></i></a>
     </div>
 
     <div class="hamburger" onclick="toggleOffcanvas()">
@@ -71,6 +76,9 @@
                 <a class="dropdown-item" href="pitch_deck.html">Pitch Deck</a>
                 <a class="dropdown-item" href="financial_model.html">Financial Model</a>
                 <a class="dropdown-item" href="market_research.html">Market Research</a>
+                <a class="dropdown-item" href="talent_n_recruitment.html">Talent and Recruitment</a>
+                <a class="dropdown-item" href="strategic_business.html">Strategic Business Advisory</a>
+                <a class="dropdown-item" href="operational_setup.html">Operational Setup</a>
               </div>
             <a href="https://emmviron.medium.com" class="offcanlink">Blog</a>
             <a href="career.html" class="offcanlink">Career</a>
@@ -82,10 +90,17 @@
 
     <section class="picture-background">
       <div class="blue-background"></div>
-      <div class="main-content"><h1>Join the Team</h1></div>
+      <div class="main-content"><h1>Careers</h1></div>
     </section>
 
+    <section class="career_section2">
+      <p>Emmviron is currently hiring for the roles below:</p>
+      <div id="jobOpeningsContainer"></div>
+    </section>
     
+    <section class="form_segment d-none" id="application_form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbaC-PhMSmRla9Rm1SFwRpeuyoownr2rWPoyrG8Y6D_yMuMw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
 
     <section class = "belowMedia">
       <p>Unlock your path to success with Emmviron. Our team of experts is ready to empower your business, offering tailored solutions, strategic guidance, and unparalleled insights. Let's take your organization to new heights. Contact us today to start your journey towards achieving your business goals and ensuring a brighter, more sustainable future.</p>

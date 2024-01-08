@@ -20,7 +20,7 @@ h2, h4 {
     position: relative;
     width: 80vw;
     height: 300px;
-    background: url('https://ik.imagekit.io/s3jkgwyie/8fe8ff81a624bdf066635b18cff0d8e8.png?updatedAt=1703351095849');
+    background: url('https://ik.imagekit.io/s3jkgwyie/1d12d239e2b902647e1e144c4184c3e4.jpg?updatedAt=1703763840469');
     background-position-y: -30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,52 +64,68 @@ h2, h4 {
     color: black;
 }
 
-.contact {
-    display: grid;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.career_section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
-.contact a {
+#jobOpeningsContainer {
     display: flex;
     gap: 20px;
-    margin-bottom: 12px;
+}
+
+.job_modal_btn {
+    width: 250px;
+    height: 150px;
+    padding: 10px 0 10px 10px;
+    overflow:hidden;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    align-content: center;
-}
-
-.contact a i{
-    color:#00599B;
-    font-weight: bold;
-}
-
-.opening-times {
-    display: grid;
-    margin-bottom: 20px;
-}
-
-.social-media {
-    display: grid;
-    gap: 0;
-}
-
-.social-media h6 {
-    color:#00599B;
+    background-color:#0064cf;
+    color: white;
     font-weight: bolder;
+    border-radius: 12px;
+    transition: ease .3s;
 }
 
-.social-media svg {
-    fill:#00599B;
+.job_modal_btn:hover {
+    background-color:#00599B;
+    cursor: pointer;
 }
 
-iframe {
-    width: 650px;
-    margin-top: -70px;
-    height: 1500px;
-    overflow: hidden;
+.job_modal_btn img {
+    height: 120%;
+    margin-left: -50px;
 }
 
+.job_modal_btn_txt {
+    width: 100px;
+}
 
+.modal-header {
+    background-color:#0064cf;
+    color: white;
+}
+
+.modal-header span {
+    color: white !important ;
+}
+
+.form_segment {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+.form_segment iframe {
+    width: 80%;
+    height: 954px;
+}
 
 @media(max-width: 768px){
     h2, h4 {
@@ -132,21 +148,24 @@ iframe {
         justify-self: center;
     }
 
-    .contact-section1-writeup {
-        width:90vw;
+    .career_section2 {
         display: grid;
-        justify-content: center;
+        gap: 25px;
     }
 
-    iframe {
-        margin-top: 0;
-        width: 120vw;
+    .career_section2 p {
+        text-align: center;
+        padding: 0 20px;
     }
 
-    .belowMedia {
-        background-color: inherit;
-        margin-top: -310px;
+    #jobOpeningsContainer {
+        display: flex;
+        flex-wrap: wrap;
         width: 100vw;
+        padding: 0 10%;
+        justify-content: center;
+        gap: 20px;
     }
+
 
 }

@@ -32,7 +32,7 @@ span {
 }
 
 .CTAbtns div, .CTAbtns a {
-    width: 115px;
+    width: fit-content;
     padding: 13px 9px;
     border-radius: 8px;
     font-weight: bolder;
