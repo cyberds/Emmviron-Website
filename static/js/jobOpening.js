@@ -73,6 +73,11 @@ function hideForm() {
 
 
 
+
+
+
+
+
 // backup
 
 // document.addEventListener('DOMContentLoaded', function () {
@@ -100,3 +105,6 @@ function hideForm() {
 //         })
 //         .catch(error => console.error('Error fetching job openings:', error));
 // });
+
+
+
