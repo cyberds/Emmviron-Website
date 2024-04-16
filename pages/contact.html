@@ -141,54 +141,74 @@
       
       
       <form id="contactForm">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" required><br>
+        <div class="formgroup">
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name" required>
+        </div>
         
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" required><br>
+        <div class="formgroup">
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="last_name" required>
+        </div>
         
-        <label for="phone_number">Phone Number:</label>
-        <input type="text" id="phone_number" name="phone_number" required><br>
+        <div class="formgroup">
+          <label for="phone_number">Phone Number:</label>
+          <input type="text" id="phone_number" name="phone_number" required>
+        </div>
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <div class="formgroup">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
         
-        <label for="business_name">Business Name:</label>
-        <input type="text" id="business_name" name="business_name" required><br>
+        <div class="formgroup">
+          <label for="business_name">Business Name:</label>
+          <input type="text" id="business_name" name="business_name" required>
+        </div>
         
-        <label for="requested_service">Requested Service:</label>
-        <select id="requested_service" name="requested_service" required>
-            <option value="">Select a service</option>
-            <option value="business_plan_financial_projection">Business Plan + Financial Projection</option>
-            <option value="business_plan_financial_model_pitch_deck">Business Plan + Financial Model (Cap Valuation) + Pitch Deck</option>
-            <option value="pitch_deck">Pitch Deck</option>
-            <option value="company_profile">Company Profile</option>
-            <option value="desktop_market_research">Desktop Market Research</option>
-            <option value="primary_market_research">Primary Market Research</option>
-            <option value="recruitment">Recruitment (We charge lesser than other firms)</option>
-            <option value="talent_management">Talent Management</option>
-            <option value="business_proposal">Business Proposal</option>
-            <option value="feasibility_study_report">Feasibility Study Report</option>
-            <option value="operational_setup">Operational Setup</option>
-            <option value="financial_model_alone">Financial Model alone</option>
-            <option value="business_training">Business Training for Executives/Team Members</option>
-            <option value="business_advisory">Business Advisory</option>
-            <option value="others">Others (Specify in the Subject)</option>
-        </select><br>
+        <div class="formgroup">
+          <label for="requested_service">Requested Service:</label>
+          <select id="requested_service" name="requested_service" required>
+              <option value="">Select a service</option>
+              <option value="business_plan_financial_projection">Business Plan + Financial Projection</option>
+              <option value="business_plan_financial_model_pitch_deck">Business Plan + Financial Model (Cap Valuation) + Pitch Deck</option>
+              <option value="pitch_deck">Pitch Deck</option>
+              <option value="company_profile">Company Profile</option>
+              <option value="desktop_market_research">Desktop Market Research</option>
+              <option value="primary_market_research">Primary Market Research</option>
+              <option value="recruitment">Recruitment (We charge lesser than other firms)</option>
+              <option value="talent_management">Talent Management</option>
+              <option value="business_proposal">Business Proposal</option>
+              <option value="feasibility_study_report">Feasibility Study Report</option>
+              <option value="operational_setup">Operational Setup</option>
+              <option value="financial_model_alone">Financial Model alone</option>
+              <option value="business_training">Business Training for Executives/Team Members</option>
+              <option value="business_advisory">Business Advisory</option>
+              <option value="others">Others (Specify in the Subject)</option>
+          </select>
+        </div>
         
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required><br>
+        <div class="formgroup">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="formgroup">
+          <label for="message">Message:</label>
+          <textarea id="message" rows="3" name="message" required></textarea>
+        </div>
+
+        <div class="formgroup">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required>
+        </div>
         
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea><br>
+        <div class="formgroup">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+        </div>
         
-        <label for="country">Country:</label>
-        <input type="text" id="country" name="country" required><br>
-        
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state" required><br>
-        
-        <button type="button" onclick="submitForm()">Submit</button>
+        <button class="bluebtn" type="button" onclick="submitForm()">Submit</button>
     </form>
     
 

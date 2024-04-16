@@ -1,7 +1,7 @@
 body {
     display: grid;
     gap: 60px;
-    justify-content: space-around;
+    justify-content: center;
     width: 100vw;
 }
 
@@ -102,18 +102,46 @@ h2, h4 {
     fill:#00599B;
 }
 
-iframe {
-    width: 650px;
-    margin-top: -70px;
-    height: 1500px;
-    overflow: hidden;
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
+.formgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.formgroup input, .formgroup textarea, .formgroup select {
+    border-radius: 15px;
+    height: 40px;
+    border: none;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #74bbef;
+    background-color: white;
+    padding: 10px 5px;
+}
+
+form button {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
 
 
 @media(max-width: 768px){
     h2, h4 {
         text-align: center;
+
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     body {
@@ -138,15 +166,11 @@ iframe {
         justify-content: center;
     }
 
-    iframe {
+    #contactForm {
         margin-top: 0;
-        width: 120vw;
+        width: 80vw;
     }
 
-    .belowMedia {
-        background-color: inherit;
-        margin-top: -310px;
-        width: 100vw;
-    }
+    
 
 }
