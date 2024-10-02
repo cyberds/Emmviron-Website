@@ -13,22 +13,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const heroTexts = [
       {
           title: "We Create Investment Worthy Business Plans, Financial Models & Pitch Decks.",
-          description: "We have worked with over 150+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
           description: "We have worked with over 200+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
       },
       {
           title: "We Conduct Primary & Desktop Market Research & Survey for Companies.",
-          description: "We have worked with over 150+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
           description: "We have worked with over 200+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
       },
       {
           title: "We execute the day-to-day activities of a business or organization efficiently and effectively.",
-          description: "We have worked with over 150+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
           description: "We have worked with over 200+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
       },
       {
           title: "We hire and nurture the right talent to help a company achieve its goal and thrive",
-          description: "We have worked with over 150+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
           description: "We have worked with over 200+ clients across Nigeria, Rwanda, UK, Cyprus, India and the US."
       },
       {

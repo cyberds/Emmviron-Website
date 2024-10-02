@@ -214,7 +214,7 @@ footer a:hover {
     .footer-socials {
         width: unset !important;
     }
-}}
+}
 
 .heartbeat {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
