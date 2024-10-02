@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://www.emmviron.com/</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://www.emmviron.com/pages/about.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Services Page -->
+    <url>
+        <loc>https://www.emmviron.com/services</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Specific Service Pages -->
+    <url>     <loc>https://www.emmviron.com/pages/business_plan.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+<url>     <loc>https://www.emmviron.com/pages/pitch_deck.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+<url>     <loc>https://www.emmviron.com/pages/financial_model.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+<url>     <loc>https://www.emmviron.com/pages/market_research.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+<url>     <loc>https://www.emmviron.com/pages/talent_n_recruitment.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+<url>     <loc>https://www.emmviron.com/pages/strategic_business.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+<url>     <loc>https://www.emmviron.com/pages/operational_setup.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.emmviron.com/services/service2</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Career Page -->
+    <url>
+        <loc>https://www.emmviron.com/pages/career.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+        
+    <url>
+        <loc>https://www.emmviron.com/pages/contact.html</loc>
+        <lastmod>2024-05-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    
+</urlset>
