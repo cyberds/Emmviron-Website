@@ -212,6 +212,7 @@ hr {
 }
 
 
+
 /* animations */
 @keyframes moveAnimation1 {
   0% {
@@ -266,6 +267,8 @@ hr {
     transform: translateX(0);
   }
 }
+
+
 
 .impact1, .impact2, .impact3 {
   animation: moveAnimation1 10s infinite;
