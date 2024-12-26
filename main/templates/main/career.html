@@ -1,0 +1,33 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block title %}Join Us{% endblock title %}
+
+
+{% block additional_head %}
+  <link rel="stylesheet" href="{% static 'main/css/career.css' %}">
+  <script src="{% static 'main/js/jobOpening.js' %}" defer></script>
+{% endblock additional_head %}
+   
+
+
+{% block content %}
+
+
+    <section class="picture-background">
+      <div class="blue-background"></div>
+      <div class="main-content"><h1>Careers</h1></div>
+    </section>
+
+    <section class="career_section2">
+      <p>Emmviron is currently hiring for the roles below:</p>
+      <div id="jobOpeningsContainer"></div>
+    </section>
+    
+    <section class="form_segment d-none" id="application_form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbaC-PhMSmRla9Rm1SFwRpeuyoownr2rWPoyrG8Y6D_yMuMw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    {% include 'main/includes/belowMedia.html' %}
+    
+{% endblock content %}

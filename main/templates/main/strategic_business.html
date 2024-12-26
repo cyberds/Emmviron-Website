@@ -1,0 +1,33 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block title %}Strategic Business Advisory{% endblock title %}
+
+{% block additional_head %}
+  <link rel="stylesheet" href="{% static 'main/css/services.css' %}">
+{% endblock additional_head %}
+    
+
+{% block content %}
+    <section class="services-hero">
+      <div class="services-hero-writeup">
+        <div><h2>Strategic Business Advisory</h2></div>
+        <br><br><br>
+      </div>
+      <div class="services-hero-img business_plan_top_img"></div>
+      
+    </section>
+
+    <section class="section2-services-we-provide">
+      <p class="center vw-80">We provide expert guidance and insights to help your organization navigate challenges, make informed decisions, and seize opportunities for growth. Our team of experienced advisors works closely with you to develop tailored strategies, optimize operations, and enhance your competitive edge.</p>
+    </section>
+
+    <section class="bottom-photo" id="strategic_business_bottom_photo"></section>
+
+    <section class="section2-services-we-provide">
+      <p class="center vw-80">With Emmviron's strategic business advisory services, you're equipped to not only survive but thrive in today's dynamic business environment.</p>
+    </section>
+
+    {% include 'main/includes/belowMedia.html' %}
+    
+{% endblock content %}

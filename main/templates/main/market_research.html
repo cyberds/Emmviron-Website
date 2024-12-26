@@ -1,0 +1,80 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block title %}Market Research{% endblock title %}
+
+{% block additional_head %}
+<link rel="stylesheet" href="{% static 'main/css/services.css' %}">
+{% endblock additional_head %}
+
+
+{% block content %}
+
+    <section class="services-hero">
+      <div class="services-hero-writeup">
+        <div><h2>Market Research</h2></div>
+        <p class="">Emmviron carries out comprehensive market research, which entails the collection and analysis of data concerning a particular target market. The primary goal of this research is to gain insights into consumer preferences, behavior, and the prevailing trends in the market. Surveys serve as a frequently employed method for gathering this data, involving the asking of individuals specific questions related to the market</p>
+      </div>
+      <div class="services-hero-img business_plan_top_img"></div>
+    </section>
+
+    <section class="section2-services-we-provide">
+      <h4 class="center pl-4">Here are the types of market research provided at Emmviron:</h4>
+      <div class="cards">
+        <div class="services-cards width-47 height-auto">
+          <h4>In-depth Desktop Market Research</h4>
+          <p>Emmviron makes use of in-depth desktop market research involving a comprehensive analysis of market data, trends, and insights conducted through online resources and data analysis tools. This approach, utilized by Emmviron, allows us to gain a deep understanding of your market dynamics, consumer behavior, and industry trends, supporting businesses in making informed strategic decisions.</p>
+        </div>
+        <div class="services-cards width-47 height-auto">
+          <h4>Primary Market Research</h4>
+          <p>Primary market research, a core service provided by Emmviron, involves collecting firsthand data directly from the source. This process includes surveys, interviews, observations, and other methods to gather unique insights and information tailored to your business needs. It's a crucial step in understanding your target audience, market trends, and customer preferences, aiding in effective decision-making and strategy development.
+          </p>
+        </div>
+      </div>
+      <div class="market-research-others">
+        <h4 class="black-txt pl-4">Market Survey</h4>
+        <div class="services-cards wide-card">
+          <h4>Online Market Survey</h4>
+          <p>Online market surveys, a specialty of Emmviron, are a valuable means of gathering data and insights from your target audience. We employ digital tools and techniques to reach potential respondents, enabling you to obtain feedback, opinions, and valuable information relevant to your business. These surveys are conducted efficiently, providing a convenient and scalable way to understand market trends, customer behavior, and preferences, which can guide your strategic decisions.</p>
+        </div>
+        <div class="services-cards wide-card">
+          <h4>Offline Market Survey</h4>
+          <p>Offline market research, a core component of Emmviron's services, involves collecting valuable information through traditional methods such as face-to-face interviews, paper surveys, and direct observations. This approach allows businesses to gain insights directly from their target audience and is particularly effective for in-depth data collectio</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-photo" id="market_research_bottom_photo"></section>
+
+    <section class="how_we_provide">
+      <h4 class="pl-4">Here's how we provide these services:</h4>
+      <div class="services-cards wide-card">
+        <h4>Market Research Strategy</h4>
+        <p>Emmviron collaborates with clients to define their market research goals and objectives. We identify the target audience, industry trends, and competitive landscape.
+
+          We employ various data collection methods, including surveys, interviews, focus groups, and data mining.Data is meticulously analyzed to extract meaningful insights, including consumer preferences, behavior, and market trends.
+          </p>
+      </div>
+      <div class="how_we_provide_cards">
+        <div class="services-cards text-justify">
+          <h4>Survey Design</h4>
+          <p>Emmviron designs surveys that are tailored to the client's objectives, ensuring that questions are relevant and unbiased. We incorporate best practices for survey construction to maximize response rates and data quality.</p>
+        </div>
+        <div class="services-cards w-100 text-justify">
+          <h4>Competitive Analysis</h4>
+          <p>In addition to customer insights, we analyze competitors' activities and strategies in the market, helping clients understand their competitive landscape.
+            <br><b>Report Generation</b>
+            <br>Emmviron compiles research findings into comprehensive reports with actionable recommendations. Reports may include visual representations, such as graphs and charts, to convey information effectively.
+            <br><b>Client Collaboration</b>
+            <br>Throughout the process, the consulting team maintains close collaboration with the client, involving them in decision-making and ensuring that the research aligns with the client's business goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-photo" id="pitch_deck_bottom_photo"></section>
+
+
+    {% include 'main/includes/belowMedia.html' %}
+    
+{% endblock content %}

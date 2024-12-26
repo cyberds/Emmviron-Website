@@ -1,0 +1,65 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block title %}Talent Recruitment & Management{% endblock title %}
+
+{% block additional_head %}
+  <link rel="stylesheet" href="{% static 'main/css/services.css' %}">
+{% endblock additional_head %}
+    
+    
+{% block content %}
+
+    <section class="services-hero">
+      <div class="services-hero-writeup">
+        <div><h2 style="text-align: left;">Talent Recruitment & Management</h2></div>
+        <p>Emmviron excels in talent recruitment and management.</p>
+      </div>
+      <div class="services-hero-img business_plan_top_img"></div>
+    </section>
+
+    <section class="section2-services-we-provide">
+      <p class="center vw-80">One of our core competencies lies in the strategic process of identifying, attracting, and onboarding individuals with the skills and qualifications necessary to meet your organization's objectives. We also specialize in nurturing, developing, and retaining these individuals to maximize their potential and contribute to the overall success of your business.
+      </p>
+      <p class="center vw-80">Our comprehensive approach includes talent acquisition, training, performance evaluation, and career development to ensure that the right people are in the right roles and that they continue to grow and thrive within your organization. At Emmviron, we are dedicated to building your team for sustainable success.
+      </p>
+    </section>
+
+    <section class="section2-services-we-provide">
+      <h4 class="center">Here's how we provide these services:</h4>
+      <div class="cards">
+        <div class="services-cards">
+          <h4>Talent Recruitment & Outsourcing</h4>
+          <p>We find and acquire qualified individuals to fill job positions within your organization.</p>
+        </div>
+        <div class="services-cards">
+          <h4>Talent Training</h4>
+          <p>Development of skills, knowledge, and capabilities of employees to improve their performance and meet the needs of the organization. It includes both on-the-job and formal training programs.</p>
+        </div>
+        <div class="services-cards">
+          <h4>Talent Management</h4>
+          <p>Talent management encompasses the strategic processes Emmviron uses to attract, develop, retain, and utilize your workforce effectively. It involves identifying high-potential individuals and nurturing their growth within your company.</p>
+        </div>
+        <div class="services-cards">
+          <h4>CVs Review & Qualification</h4>
+          <p>We assess applicants' resumes (CVs) to determine if they meet the qualifications and requirements for a specific role, as it's a crucial part of the recruitment process.</p>
+        </div>
+        <div class="services-cards">
+          <h4>HR Consulting</h4>
+          <p>We provide expert advice and guidance to organizations on various human resources issues, such as recruitment, employee relations, compensation, and compliance with labor laws.</p>
+        </div>
+        <div class="services-cards">
+          <h4>People & Performance Director as a Service</h4>
+          <p>Similar to HR Manager as a Service, we offer the role of a People & Performance Director to organizations, focusing on optimizing employee performance, engagement, and development.</p>
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <section class="bottom-photo" id="talent_n_recruitment_bottom_photo"></section>
+
+
+    {% include 'main/includes/belowMedia.html' %}
+    
+{% endblock content %}

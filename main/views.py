@@ -1,0 +1,105 @@
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .forms import ContactForm
+from .models import Contacts
+
+import mailchimp_marketing as MailchimpMarketing
+from mailchimp_marketing.api_client import ApiClientError
+
+mailchimp = MailchimpMarketing.Client()
+mailchimp.set_config({
+  "api_key": "f034e61f40946857b234644f3c5b8047-us17",
+  "server": "us17"
+})
+
+
+def add_to_mailchimp(first_name, last_name, email, service, subject, message, country, state, business_name, phone_number):
+    list_id = "4441e65908"
+    
+    # Prepare the subscriber data
+    subscriber_data = {
+        "email_address": email,
+        "status": "subscribed",  # Use 'subscribed' to add them to the list
+        "merge_fields": {
+            "FNAME": first_name,
+            "LNAME": last_name,
+            "SERVICE": service,
+            "SUBJECT": subject,
+            "MESSAGE": message,
+            "COUNTRY": country,
+            "STATE": state,
+            "BNAME": business_name,
+            "PHONE": phone_number
+        }
+    }
+    
+    try:
+        response = mailchimp.lists.add_list_member(list_id, subscriber_data)
+        print("Subscriber added successfully: {}".format(response))
+    except ApiClientError as error:
+        print("An exception occurred while adding the subscriber: {}".format(error.text))
+
+
+def home(request):
+    return render(request, 'main/index.html')
+
+def about(request):
+    return render(request, 'main/about.html')
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            # Extract cleaned data from the form
+            first_name = form.cleaned_data['first_name']
+            last_name = form.cleaned_data['last_name']
+            email = form.cleaned_data['email']
+            service = form.cleaned_data['requested_service']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            country = form.cleaned_data['country']
+            state = form.cleaned_data['state']
+            business_name = form.cleaned_data['business_name']
+            phone_number = form.cleaned_data['phone_number']
+
+            # Try to add the subscriber to Mailchimp
+            try:
+                add_to_mailchimp(first_name, last_name, email, service, subject, message, country, state, business_name, phone_number)
+            except Exception as e:
+                messages.error(request, f"An error occurred while adding to Mailchimp: {str(e)}")
+                
+            
+            # Save the form data to the database
+            form.save()
+            
+            messages.success(request, 'Your form was submitted successfully!')
+            return redirect('contact')  # Redirect after successful submission to avoid resubmitting on refresh
+    else:
+        form = ContactForm()
+
+    return render(request, 'main/contact.html', {'form': form})
+
+
+def business_plan(request):
+    return render(request, 'main/business_plan.html')
+
+def career(request):
+    return render(request, 'main/career.html')
+
+def financial_model(request):
+    return render(request, 'main/financial_model.html')
+
+def market_research(request):
+    return render(request, 'main/market_research.html')
+
+def operational_setup(request):
+    return render(request, 'main/operational_setup.html')
+
+def pitch_deck(request):
+    return render(request, 'main/pitch_deck.html')
+
+def strategic_business(request):
+    return render(request, 'main/strategic_business.html')
+
+def talent_n_recruitment(request):
+    return render(request, 'main/talent_n_recruitment.html')
