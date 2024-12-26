@@ -1,0 +1,45 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+{% load humanize %}
+
+
+{% block title %}Join Us{% endblock title %}
+
+
+{% block additional_head %}
+  <link rel="stylesheet" href="{% static 'main/css/career.css' %}">
+  {% comment %} <script src="{% static 'main/js/jobOpening.js' %}" defer></script> {% endcomment %}
+{% endblock additional_head %}
+   
+
+
+{% block content %}
+
+
+    <section class="picture-background">
+      <div class="blue-background"></div>
+      <div class="main-content"><h1>Applying for <span>{{ job.name }}</span></h1></div>
+    </section>
+
+    <section class="career_section2">
+      <div class="prelim">
+        <p>Location: {{ job.location }}</p>
+        <p>Contract Type: {{ job.contract_type }}</p>
+      </div>
+      
+      <div id="jobOpeningsContainer">
+        
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary" type="submit">Submit Application</button>
+        </form>
+
+      </div>
+    </section>
+    
+
+
+    {% include 'main/includes/belowMedia.html' %}
+    
+{% endblock content %}

@@ -1,0 +1,58 @@
+{% extends "main/includes/base.html" %}
+
+{% block content %}
+    <div class="blog-list">
+        {% if blogs %}
+            <h1>All Blog Posts</h1>
+        {% endif %}
+
+        <div id="blog-posts">
+            {% if not blogs %}
+                <p>Writers' block. Don't worry, we'll have some available for you to read soon.</p>
+            {% endif %}
+            {% for blog in blogs %}
+                <div class="blog-item">
+                    <h2><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></h2>
+                    <p>{{ blog.content|truncatewords:50 }}</p>
+                    <p><small>Published on {{ blog.published_on }}</small></p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div id="loading" style="display: none;">Loading...</div>
+    </div>
+
+    <script>
+        let page = 1;
+        const blogPostsContainer = document.getElementById('blog-posts');
+        const loadingElement = document.getElementById('loading');
+
+        window.addEventListener('scroll', () => {
+            if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 500) {
+                // Lazy load next page
+                page++;
+                loadingElement.style.display = 'block';
+
+                fetch(`/blog/?page=${page}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        loadingElement.style.display = 'none';
+                        data.blogs.forEach(blog => {
+                            const blogElement = document.createElement('div');
+                            blogElement.classList.add('blog-item');
+                            blogElement.innerHTML = `
+                                <h2><a href="/post/${blog.slug}">${blog.title}</a></h2>
+                                <p>${blog.content.slice(0, 50)}...</p>
+                                <p><small>Published on ${blog.published_on}</small></p>
+                            `;
+                            blogPostsContainer.appendChild(blogElement);
+                        });
+                    })
+                    .catch(error => {
+                        loadingElement.style.display = 'none';
+                        console.error('Error loading more posts:', error);
+                    });
+            }
+        });
+    </script>
+{% endblock %}

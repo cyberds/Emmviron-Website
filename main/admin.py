@@ -3,7 +3,7 @@ from .models import JobOpening, Contacts
 
 
 class JobOpeningAdmin(admin.ModelAdmin):
-    list_display = ('name', 'location', 'job_description', 'qualification', 'salary', 'contract_type', 'closed')
+    list_display = ('name', 'location', 'job_description', 'qualification', 'salary', 'contract_type', 'is_active')
     search_fields = ('name', 'qualification', 'job_description')
 
 class ContactsAdmin(admin.ModelAdmin):

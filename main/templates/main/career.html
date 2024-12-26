@@ -1,12 +1,14 @@
 {% extends "main/includes/base.html" %}
 {% load static %}
+{% load humanize %}
+
 
 {% block title %}Join Us{% endblock title %}
 
 
 {% block additional_head %}
   <link rel="stylesheet" href="{% static 'main/css/career.css' %}">
-  <script src="{% static 'main/js/jobOpening.js' %}" defer></script>
+  {% comment %} <script src="{% static 'main/js/jobOpening.js' %}" defer></script> {% endcomment %}
 {% endblock additional_head %}
    
 
@@ -20,13 +22,55 @@
     </section>
 
     <section class="career_section2">
-      <p>Emmviron is currently hiring for the roles below:</p>
-      <div id="jobOpeningsContainer"></div>
+      {% if jobs %}
+        <p>Emmviron is currently hiring for the roles below:</p>
+      {% endif %}
+      <div id="jobOpeningsContainer">
+        {% if not jobs %}
+            <p>No open positions for now. Drop your details in the <a href="{% url 'contact' %}" class="btn btn-primary mx-2 px-2 py-1">Contact Page</a> and we'll contact you as soon as there is a role available for you.</p>
+        
+        {% else %}
+            {% for job in jobs %}
+              
+              <div style="" class="job_modal_btn" data-toggle="modal" data-target="#exampleModalLong{{job.id}}">
+                <div class="ob_modal_btn_txt">{{job.name}}</div> <img src="https://ik.imagekit.io/s3jkgwyie/Business%20and%20Sales%20Manager.png?updatedAt=1704555706468">
+                </div>
+
+                <div class="modal fade" id="exampleModalLong{{job.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">{{job.name}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Location: <span style="font-weight: bolder;">{{job.location}}</span></p>
+                            <p>Contract Type: <span style="font-weight: bolder;">{{job.contract_type}}</span></p>
+                            <p>Job Description</p>
+                            <p>{{job.job_description}}</p>
+                            <p style="font-weight: bolder;">Duties, Responsibilities, & Functions:</p>
+                            {{job.formatted_duties}}
+                            <p style="font-weight: bolder;">Qualifications:</p>
+                            {{job.formatted_qualifications}}
+                            <p><span style="font-weight: bolder;">Salary:</span> {{job.salary | intcomma}}</p>
+                        </div>
+                        <div class="modal-footer d-flex justify-center" style="gap: 15px; justify-content:center;">
+                        <button type="button" onclick="hideForm()" class="btn btn-danger px-5" data-dismiss="modal">Not interested <i class="fa-solid fa-rectangle-xmark"></i></button>
+                        
+                        </div><a href="{% url 'job_application' job.id %}" class="btn btn-primary px-5">Apply <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        
+      </div>
     </section>
     
-    <section class="form_segment d-none" id="application_form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbaC-PhMSmRla9Rm1SFwRpeuyoownr2rWPoyrG8Y6D_yMuMw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </section>
+
 
     {% include 'main/includes/belowMedia.html' %}
     

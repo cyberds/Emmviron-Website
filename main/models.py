@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.safestring import mark_safe
 
 class JobOpening(models.Model):
     name = models.CharField(max_length=255)
@@ -8,20 +9,38 @@ class JobOpening(models.Model):
     duties = models.TextField(null = True, blank=True)
     salary = models.DecimalField(max_digits=20, decimal_places=2, default=0)
     contract_type = models.CharField(max_length=20, choices=[('full_time', 'Full Time'), ('part_time', 'Part Time'), ('contract', 'Contract')])
-    closed = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
     def formatted_qualifications(self):
         # Use this method to convert the qualifications text into an HTML list
-        qualifications_list = [f"<li>{item.strip()}</li>" for item in self.qualifications.split('\n') if item.strip()]
-        return "<ul>" + "".join(qualifications_list) + "</ul>"
+        qualifications_list = [f"<li>{item.strip()}</li>" for item in self.qualification.split('\n') if item.strip()]
+        return mark_safe("<ul>" + "".join(qualifications_list) + "</ul>")
 
     def formatted_duties(self):
         # Use this method to convert the qualifications text into an HTML list
-        duties = [f"<li>{item.strip()}</li>" for item in self.duty.split('\n') if item.strip()]
-        return "<ul>" + "".join(duties) + "</ul>"
+        duties = [f"<li>{item.strip()}</li>" for item in self.duties.split('\n') if item.strip()]
+        return mark_safe("<ul>" + "".join(duties) + "</ul>")
 
     def __str__(self):
         return self.name
+
+
+
+class JobApplication(models.Model):
+    job = models.ForeignKey('JobOpening', on_delete=models.CASCADE)
+    full_name = models.CharField(max_length=255)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15)
+    linkedin_profile = models.URLField(null=True, blank=True)
+    bio = models.TextField()
+    social_media_handles = models.TextField(null=True, blank=True)
+    resume = models.FileField(upload_to='resumes/')
+    passport_photo = models.ImageField(upload_to='passport_photos/')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.full_name} - {self.job.name}"
 
 
 
@@ -32,6 +51,7 @@ class TalenttaFormEntry(models.Model):
     phone_number = models.CharField(max_length=20)
     professional_skills = models.TextField()
     talentta_expectation = models.TextField()
+    submitted_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
         return self.email
@@ -69,6 +89,7 @@ class Contacts(models.Model):
     message = models.TextField()
     country = models.CharField(max_length = 500)
     state = models.CharField(max_length = 500)
+    contacted_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
 
     def __str__(self):

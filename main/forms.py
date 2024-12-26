@@ -1,5 +1,5 @@
 from django import forms
-from .models import Contacts
+from .models import Contacts, JobApplication
 
 class ContactForm(forms.ModelForm):
     class Meta:
@@ -13,3 +13,9 @@ class ContactForm(forms.ModelForm):
             'requested_service': forms.Select(attrs={'class': 'form-control'}),
             'message': forms.Textarea(attrs={'rows': 3}),
         }
+
+
+class JobApplicationForm(forms.ModelForm):
+    class Meta:
+        model = JobApplication
+        fields = ['full_name', 'email', 'phone', 'linkedin_profile', 'bio', 'social_media_handles', 'resume', 'passport_photo']

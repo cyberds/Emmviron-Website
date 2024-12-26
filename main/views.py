@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
-from .forms import ContactForm
-from .models import Contacts
+from .forms import ContactForm, JobApplicationForm
+from .models import Contacts, JobOpening
 
 import mailchimp_marketing as MailchimpMarketing
 from mailchimp_marketing.api_client import ApiClientError
@@ -84,7 +84,30 @@ def business_plan(request):
     return render(request, 'main/business_plan.html')
 
 def career(request):
-    return render(request, 'main/career.html')
+    jobs = JobOpening.objects.filter(is_active=True)
+
+    return render(request, 'main/career.html', {'jobs': jobs})
+
+def job_application(request, id):
+    job = get_object_or_404(JobOpening, id=id)
+    if request.method == 'POST':
+        form = JobApplicationForm(request.POST, request.FILES)
+        if form.is_valid():
+            application = form.save(commit=False)
+            application.job = job
+            application.save()
+            messages.success(request, 'Your application has been submitted successfully!')
+            return redirect('career')  # Replace 'career' with your job listings page URL name
+        else:
+            messages.error(request, 'Please correct the errors below.')
+    else:
+        form = JobApplicationForm()
+
+    context = {
+        'job': job,
+        'form': form,
+    }
+    return render(request, 'main/job_application_page.html', context)
 
 def financial_model(request):
     return render(request, 'main/financial_model.html')
