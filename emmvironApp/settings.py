@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+from urllib.parse import urlparse
 from decouple import config
 import cloudinary
 import cloudinary.uploader
@@ -34,7 +36,7 @@ ALLOWED_HOSTS = [
     'https://emmviron.com',
     'emmviron-website.onrender.com',
     'https://emmviron-website.onrender.com'
-    ]
+]
 
 
 # Application definition
@@ -90,6 +92,20 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+
+tmpPostgres = urlparse(config("DATABASE_URL"))
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': tmpPostgres.path.replace('/', ''),
+        'USER': tmpPostgres.username,
+        'PASSWORD': tmpPostgres.password,
+        'HOST': tmpPostgres.hostname,
+        'PORT': 5432,
     }
 }
 
