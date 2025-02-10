@@ -98,3 +98,23 @@ class Contacts(models.Model):
     class Meta:
         verbose_name = "Contact"
         verbose_name_plural = "Contacts"
+
+
+from django.db import models
+
+class FAQ(models.Model):
+    CATEGORY_CHOICES = (
+        ('general', 'General'),
+        ('funding', 'Funding & Investor'),
+        ('additional', 'Additional Questions')
+    )
+    
+    question = models.CharField(max_length=255)
+    answer = models.TextField()
+    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='general')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.question
+

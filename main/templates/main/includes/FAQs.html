@@ -1,0 +1,205 @@
+<div class="container faq-section">
+    <h2>Got Questions? We've Got Answers!</h2>
+    
+    <div class="faq-categories">
+        <button class="category-btn active" data-category="general">General</button>
+        <button class="category-btn" data-category="funding">Funding & Investor</button>
+        <button class="category-btn" data-category="additional">Additional Questions</button>
+    </div>
+
+    <div class="accordion">
+        {% for category, category_faqs in faq_categories.items %}
+            <div class="faq-category" id="{{ category }}-faqs" {% if category != 'general' %}style="display: none;"{% endif %}>
+                {% if category_faqs %}
+                    {% for faq in category_faqs %}
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                <div class="accordion-question">
+                                    {{ faq.question }}
+                                </div>
+                                <div class="button"><i class="fa-solid fa-plus"></i></div>
+                            </button>
+                            <div class="accordion-content">
+                                <p>{{ faq.answer }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="empty-category-message">
+                        Sorry, no questions here yet, we're still working on these
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .faq-section {
+        width: 100%;
+        margin: 5%;
+    }
+
+    .faq-section h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+    }
+
+    .accordion-button {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        background: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 1s ease;
+    }
+
+    .accordion-item {
+        margin-top: 1rem;
+        padding: 0 10px;
+        transition: 1s ease;
+    }
+
+    .accordion-item.active button {
+        outline: 0px;
+        border: 0px;
+    }
+
+    .accordion-item button:active,
+    .accordion-item button:focus {
+        outline: 0px;
+        border: 0px;
+    }
+
+    .accordion-item.active .accordion-button {
+        font-weight: bolder;
+    }
+
+    .accordion-item.active {
+        outline: 0.5px solid var(--light-blue);
+        border-radius: 12px;
+        background-color: white;
+        padding: 5px 10px;
+    }
+
+    .accordion-content {
+        display: none;
+        padding: 10px;
+    }
+
+    .accordion-item.active .accordion-content {
+        display: block;
+    }
+
+    .accordion-item.active .accordion-button .button i{
+        rotate: 45deg;
+    }
+    
+    .faq-categories {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 4rem;
+    }
+
+    .category-btn {
+        padding: 10px 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.5s ease;
+    }
+
+    .category-btn:active,
+    .category-btn:focus {
+        outline: 0px;
+        border: 0px;
+    }
+
+    .category-btn.active {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+    .empty-category-message {
+        text-align: center;
+        padding: 20px;
+        color: var(--secondary-color);
+        font-style: italic;
+    }
+
+    @media(max-width: 700px){
+        .faq-section {
+            width: 95vw;
+            justify-content: center;
+            justify-self: center;
+            max-width: 95vw;
+        }
+
+        .faq-section * {
+            font-size: small;
+        }
+
+        .faq-section h2 {
+            width: 100%;
+            font-size: 1.5rem;
+            align-self: center;
+        }
+
+        .faq-categories {
+            margin-bottom: 1rem;
+        }
+
+        .category-btn {
+            padding: 3px 8px;
+        }
+
+        .accordion-item {
+            padding: 0;
+            margin-top: 0.3rem;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+        const categoryBtns = document.querySelectorAll(".category-btn");
+        
+        // Accordion functionality
+        document.querySelectorAll(".accordion-button").forEach(button => {
+            button.addEventListener("click", () => {
+                accordionItems.forEach(item => {
+                    if (item !== button.parentElement) {
+                        item.classList.remove("active");
+                    }
+                });
+                button.parentElement.classList.toggle("active");
+            });
+        });
+
+        // Category switching functionality
+        categoryBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // Update active button
+                categoryBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                // Show selected category
+                const category = btn.dataset.category;
+                document.querySelectorAll(".faq-category").forEach(cat => {
+                    cat.style.display = "none";
+                });
+                document.getElementById(`${category}-faqs`).style.display = "block";
+            });
+        });
+    });
+</script>
