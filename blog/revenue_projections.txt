@@ -1,0 +1,378 @@
+Revenue Projections Report
+==================================================
+
+Year: 2025
+Month 1:
+ Subscription: ₦0.00, 
+Ads: ₦0.00, Total: ₦0.00, 
+CPM: 0.00, CPC: 0.00, CPA: 0.00, Push: 0 
+
+Month 2:
+ Subscription: ₦0.00, 
+Ads: ₦0.00, Total: ₦0.00, 
+CPM: 0.00, CPC: 0.00, CPA: 0.00, Push: 0 
+
+Month 3:
+ Subscription: ₦0.00, 
+Ads: ₦0.00, Total: ₦0.00, 
+CPM: 0.00, CPC: 0.00, CPA: 0.00, Push: 0 
+
+Month 4:
+ Subscription: ₦0.00, 
+Ads: ₦0.00, Total: ₦0.00, 
+CPM: 0.00, CPC: 0.00, CPA: 0.00, Push: 0 
+
+Month 5:
+ Subscription: ₦1,032,920.00, 
+Ads: ₦293,677.16, Total: ₦1,326,597.16, 
+CPM: 0.00, CPC: 134,696.10, CPA: 88,981.06, Push: 1 
+
+Month 6:
+ Subscription: ₦1,625,640.00, 
+Ads: ₦602,176.78, Total: ₦2,227,816.78, 
+CPM: 2,118.30, CPC: 319,195.80, CPA: 210,862.68, Push: 2 
+
+Month 7:
+ Subscription: ₦1,625,640.00, 
+Ads: ₦883,483.42, Total: ₦2,509,123.42, 
+CPM: 3,238.02, CPC: 487,921.50, CPA: 322,323.90, Push: 3 
+
+Month 8:
+ Subscription: ₦1,625,640.00, 
+Ads: ₦1,164,790.07, Total: ₦2,790,430.07, 
+CPM: 4,357.75, CPC: 656,647.20, CPA: 433,785.12, Push: 4 
+
+Month 9:
+ Subscription: ₦1,625,640.00, 
+Ads: ₦1,446,096.71, Total: ₦3,071,736.71, 
+CPM: 5,477.47, CPC: 825,372.90, CPA: 545,246.34, Push: 5 
+
+Month 10:
+ Subscription: ₦1,625,640.00, 
+Ads: ₦1,727,403.36, Total: ₦3,353,043.36, 
+CPM: 6,597.20, CPC: 994,098.60, CPA: 656,707.56, Push: 6 
+
+Month 11:
+ Subscription: ₦1,625,640.00, 
+Ads: ₦2,008,710.00, Total: ₦3,634,350.00, 
+CPM: 7,716.92, CPC: 1,162,824.30, CPA: 768,168.78, Push: 7 
+
+Month 12:
+ Subscription: ₦1,613,240.00, 
+Ads: ₦2,281,291.24, Total: ₦3,894,531.24, 
+CPM: 8,801.92, CPC: 1,326,316.56, CPA: 876,172.76, Push: 8 
+
+Total Subscription Revenue: ₦12,400,000.00, 
+Total Ad Revenue: ₦10,407,628.75, 
+Total Revenue: ₦22,807,628.75, 
+Total CPM Impressions: 38,307.59, 
+Total CPC Clicks: 5,907,072.96, 
+Total CPA Actions: 3,902,248.20, 
+Total Push Notifications: ₦560,000.00, 
+Total Daily Subscribers: 800.00, 
+Total Annual Subscribers: 200.00, 
+Total Monthly Subscribers: 2,000.00 
+Revenue from Daily Subscriptions: ₦240,000.00, 
+Revenue from Annual Subscriptions: ₦6,000,000.00, 
+Revenue from Monthly Subscriptions: ₦4,000,000.00 
+
+Year: 2026
+Month 1:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦3,719,503.80, Total: ₦7,852,423.80, 
+CPM: 14,526.64, CPC: 2,188,946.10, CPA: 1,446,031.06, Push: 1 
+
+Month 2:
+ Subscription: ₦4,134,160.00, 
+Ads: ₦4,434,948.87, Total: ₦8,569,108.87, 
+CPM: 17,374.43, CPC: 2,618,064.90, CPA: 1,729,509.54, Push: 2 
+
+Month 3:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦5,150,069.33, Total: ₦9,282,989.33, 
+CPM: 20,220.93, CPC: 3,046,989.00, CPA: 2,012,859.40, Push: 3 
+
+Month 4:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦5,865,244.80, Total: ₦9,998,164.80, 
+CPM: 23,067.64, CPC: 3,475,946.10, CPA: 2,296,231.06, Push: 4 
+
+Month 5:
+ Subscription: ₦4,134,160.00, 
+Ads: ₦6,580,689.87, Total: ₦10,714,849.87, 
+CPM: 25,915.43, CPC: 3,905,064.90, CPA: 2,579,709.54, Push: 5 
+
+Month 6:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦7,295,810.33, Total: ₦11,428,730.33, 
+CPM: 28,761.93, CPC: 4,333,989.00, CPA: 2,863,059.40, Push: 6 
+
+Month 7:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦8,010,985.80, Total: ₦12,143,905.80, 
+CPM: 31,608.64, CPC: 4,762,946.10, CPA: 3,146,431.06, Push: 7 
+
+Month 8:
+ Subscription: ₦4,134,160.00, 
+Ads: ₦8,726,430.87, Total: ₦12,860,590.87, 
+CPM: 34,456.43, CPC: 5,192,064.90, CPA: 3,429,909.54, Push: 8 
+
+Month 9:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦9,441,551.33, Total: ₦13,574,471.33, 
+CPM: 37,302.93, CPC: 5,620,989.00, CPA: 3,713,259.40, Push: 9 
+
+Month 10:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦10,156,726.80, Total: ₦14,289,646.80, 
+CPM: 40,149.64, CPC: 6,049,946.10, CPA: 3,996,631.06, Push: 10 
+
+Month 11:
+ Subscription: ₦4,134,160.00, 
+Ads: ₦10,872,171.87, Total: ₦15,006,331.87, 
+CPM: 42,997.43, CPC: 6,479,064.90, CPA: 4,280,109.54, Push: 11 
+
+Month 12:
+ Subscription: ₦4,132,920.00, 
+Ads: ₦11,563,174.41, Total: ₦15,696,094.41, 
+CPM: 45,747.93, CPC: 6,893,523.25, CPA: 4,553,903.24, Push: 12 
+
+Total Subscription Revenue: ₦49,600,000.00, 
+Total Ad Revenue: ₦91,817,308.08, 
+Total Revenue: ₦141,417,308.08, 
+Total CPM Impressions: 362,130.00, 
+Total CPC Clicks: 54,567,534.25, 
+Total CPA Actions: 36,047,643.84, 
+Total Push Notifications: ₦840,000.00, 
+Total Daily Subscribers: 3,200.00, 
+Total Annual Subscribers: 800.00, 
+Total Monthly Subscribers: 8,000.00 
+Revenue from Daily Subscriptions: ₦960,000.00, 
+Revenue from Annual Subscriptions: ₦24,000,000.00, 
+Revenue from Monthly Subscriptions: ₦16,000,000.00 
+
+Year: 2027
+Month 1:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦14,948,144.45, Total: ₦20,115,224.45, 
+CPM: 59,221.61, CPC: 8,923,803.90, CPA: 5,895,118.94, Push: 1 
+
+Month 2:
+ Subscription: ₦5,165,840.00, 
+Ads: ₦15,842,005.13, Total: ₦21,007,845.13, 
+CPM: 62,779.57, CPC: 9,459,935.10, CPA: 6,249,290.46, Push: 2 
+
+Month 3:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦16,736,190.42, Total: ₦21,903,270.42, 
+CPM: 66,338.82, CPC: 9,996,261.00, CPA: 6,603,590.60, Push: 3 
+
+Month 4:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦17,630,320.70, Total: ₦22,797,400.70, 
+CPM: 69,897.86, CPC: 10,532,553.90, CPA: 6,957,868.94, Push: 4 
+
+Month 5:
+ Subscription: ₦5,165,840.00, 
+Ads: ₦18,524,181.38, Total: ₦23,690,021.38, 
+CPM: 73,455.82, CPC: 11,068,685.10, CPA: 7,312,040.46, Push: 5 
+
+Month 6:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦19,418,366.67, Total: ₦24,585,446.67, 
+CPM: 77,015.07, CPC: 11,605,011.00, CPA: 7,666,340.60, Push: 6 
+
+Month 7:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦20,312,496.95, Total: ₦25,479,576.95, 
+CPM: 80,574.11, CPC: 12,141,303.90, CPA: 8,020,618.94, Push: 7 
+
+Month 8:
+ Subscription: ₦5,165,840.00, 
+Ads: ₦21,206,357.63, Total: ₦26,372,197.63, 
+CPM: 84,132.07, CPC: 12,677,435.10, CPA: 8,374,790.46, Push: 8 
+
+Month 9:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦22,100,542.92, Total: ₦27,267,622.92, 
+CPM: 87,691.32, CPC: 13,213,761.00, CPA: 8,729,090.60, Push: 9 
+
+Month 10:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦22,994,673.20, Total: ₦28,161,753.20, 
+CPM: 91,250.36, CPC: 13,750,053.90, CPA: 9,083,368.94, Push: 10 
+
+Month 11:
+ Subscription: ₦5,165,840.00, 
+Ads: ₦23,888,533.88, Total: ₦29,054,373.88, 
+CPM: 94,808.32, CPC: 14,286,185.10, CPA: 9,437,540.46, Push: 11 
+
+Month 12:
+ Subscription: ₦5,167,080.00, 
+Ads: ₦24,752,571.78, Total: ₦29,919,651.78, 
+CPM: 98,247.57, CPC: 14,804,428.81, CPA: 9,779,895.39, Push: 12 
+
+Total Subscription Revenue: ₦62,000,000.00, 
+Total Ad Revenue: ₦238,354,385.10, 
+Total Revenue: ₦300,354,385.10, 
+Total CPM Impressions: 945,412.50, 
+Total CPC Clicks: 142,459,417.81, 
+Total CPA Actions: 94,109,554.79, 
+Total Push Notifications: ₦840,000.00, 
+Total Daily Subscribers: 4,000.00, 
+Total Annual Subscribers: 1,000.00, 
+Total Monthly Subscribers: 10,000.00 
+Revenue from Daily Subscriptions: ₦1,200,000.00, 
+Revenue from Annual Subscriptions: ₦30,000,000.00, 
+Revenue from Monthly Subscriptions: ₦20,000,000.00 
+
+Year: 2028
+Month 1:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦29,826,019.30, Total: ₦40,158,939.30, 
+CPM: 118,442.14, CPC: 17,847,446.10, CPA: 11,790,131.06, Push: 1 
+
+Month 2:
+ Subscription: ₦10,334,160.00, 
+Ads: ₦31,614,334.87, Total: ₦41,948,494.87, 
+CPM: 125,560.43, CPC: 18,920,064.90, CPA: 12,498,709.54, Push: 2 
+
+Month 3:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦33,402,325.83, Total: ₦43,735,245.83, 
+CPM: 132,677.43, CPC: 19,992,489.00, CPA: 13,207,159.40, Push: 3 
+
+Month 4:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦35,190,371.80, Total: ₦45,523,291.80, 
+CPM: 139,794.64, CPC: 21,064,946.10, CPA: 13,915,631.06, Push: 4 
+
+Month 5:
+ Subscription: ₦10,334,160.00, 
+Ads: ₦36,978,687.37, Total: ₦47,312,847.37, 
+CPM: 146,912.93, CPC: 22,137,564.90, CPA: 14,624,209.54, Push: 5 
+
+Month 6:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦38,766,678.33, Total: ₦49,099,598.33, 
+CPM: 154,029.93, CPC: 23,209,989.00, CPA: 15,332,659.40, Push: 6 
+
+Month 7:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦40,554,724.30, Total: ₦50,887,644.30, 
+CPM: 161,147.14, CPC: 24,282,446.10, CPA: 16,041,131.06, Push: 7 
+
+Month 8:
+ Subscription: ₦10,334,160.00, 
+Ads: ₦42,343,039.87, Total: ₦52,677,199.87, 
+CPM: 168,265.43, CPC: 25,355,064.90, CPA: 16,749,709.54, Push: 8 
+
+Month 9:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦44,131,030.83, Total: ₦54,463,950.83, 
+CPM: 175,382.43, CPC: 26,427,489.00, CPA: 17,458,159.40, Push: 9 
+
+Month 10:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦45,919,076.80, Total: ₦56,251,996.80, 
+CPM: 182,499.64, CPC: 27,499,946.10, CPA: 18,166,631.06, Push: 10 
+
+Month 11:
+ Subscription: ₦10,334,160.00, 
+Ads: ₦47,707,392.37, Total: ₦58,041,552.37, 
+CPM: 189,617.93, CPC: 28,572,564.90, CPA: 18,875,209.54, Push: 11 
+
+Month 12:
+ Subscription: ₦10,332,920.00, 
+Ads: ₦49,435,088.53, Total: ₦59,768,008.53, 
+CPM: 196,494.93, CPC: 29,608,824.62, CPA: 19,559,768.99, Push: 12 
+
+Total Subscription Revenue: ₦124,000,000.00, 
+Total Ad Revenue: ₦475,868,770.21, 
+Total Revenue: ₦599,868,770.21, 
+Total CPM Impressions: 1,890,825.00, 
+Total CPC Clicks: 284,918,835.62, 
+Total CPA Actions: 188,219,109.59, 
+Total Push Notifications: ₦840,000.00, 
+Total Daily Subscribers: 8,000.00, 
+Total Annual Subscribers: 2,000.00, 
+Total Monthly Subscribers: 20,000.00 
+Revenue from Daily Subscriptions: ₦2,400,000.00, 
+Revenue from Annual Subscriptions: ₦60,000,000.00, 
+Revenue from Monthly Subscriptions: ₦40,000,000.00 
+
+Year: 2029
+Month 1:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦61,446,814.08, Total: ₦90,689,734.08, 
+CPM: 244,306.92, CPC: 36,813,371.10, CPA: 24,319,136.06, Push: 1 
+
+Month 2:
+ Subscription: ₦29,244,160.00, 
+Ads: ₦66,507,384.67, Total: ₦95,751,544.67, 
+CPM: 264,450.23, CPC: 39,848,664.90, CPA: 26,324,269.54, Push: 2 
+
+Month 3:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦71,567,630.65, Total: ₦100,810,550.65, 
+CPM: 284,592.25, CPC: 42,883,764.00, CPA: 28,329,274.40, Push: 3 
+
+Month 4:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦76,627,931.65, Total: ₦105,870,851.65, 
+CPM: 304,734.49, CPC: 45,918,896.10, CPA: 30,334,301.06, Push: 4 
+
+Month 5:
+ Subscription: ₦29,244,160.00, 
+Ads: ₦81,688,502.25, Total: ₦110,932,662.25, 
+CPM: 324,877.81, CPC: 48,954,189.90, CPA: 32,339,434.54, Push: 5 
+
+Month 6:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦86,748,748.23, Total: ₦115,991,668.23, 
+CPM: 345,019.83, CPC: 51,989,289.00, CPA: 34,344,439.40, Push: 6 
+
+Month 7:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦91,809,049.23, Total: ₦121,051,969.23, 
+CPM: 365,162.07, CPC: 55,024,421.10, CPA: 36,349,466.06, Push: 7 
+
+Month 8:
+ Subscription: ₦29,244,160.00, 
+Ads: ₦96,869,619.82, Total: ₦126,113,779.82, 
+CPM: 385,305.38, CPC: 58,059,714.90, CPA: 38,354,599.54, Push: 8 
+
+Month 9:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦101,929,865.80, Total: ₦131,172,785.80, 
+CPM: 405,447.40, CPC: 61,094,814.00, CPA: 40,359,604.40, Push: 9 
+
+Month 10:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦106,990,166.80, Total: ₦136,233,086.80, 
+CPM: 425,589.64, CPC: 64,129,946.10, CPA: 42,364,631.06, Push: 10 
+
+Month 11:
+ Subscription: ₦29,244,160.00, 
+Ads: ₦112,050,737.40, Total: ₦141,294,897.40, 
+CPM: 445,732.96, CPC: 67,165,239.90, CPA: 44,369,764.54, Push: 11 
+
+Month 12:
+ Subscription: ₦29,242,920.00, 
+Ads: ₦116,940,349.11, Total: ₦146,183,269.11, 
+CPM: 465,195.78, CPC: 70,097,993.79, CPA: 46,307,159.54, Push: 12 
+
+Total Subscription Revenue: ₦350,920,000.00, 
+Total Ad Revenue: ₦1,071,176,799.68, 
+Total Revenue: ₦1,422,096,799.68, 
+Total CPM Impressions: 4,260,414.75, 
+Total CPC Clicks: 641,980,304.79, 
+Total CPA Actions: 424,096,080.14, 
+Total Push Notifications: ₦840,000.00, 
+Total Daily Subscribers: 22,640.00, 
+Total Annual Subscribers: 5,660.00, 
+Total Monthly Subscribers: 56,600.00 
+Revenue from Daily Subscriptions: ₦6,792,000.00, 
+Revenue from Annual Subscriptions: ₦169,800,000.00, 
+Revenue from Monthly Subscriptions: ₦113,200,000.00 
+

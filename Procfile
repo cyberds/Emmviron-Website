@@ -1,0 +1,1 @@
+web: gunicorn emmvironApp.wsgi --bind 0.0.0.0:$PORT

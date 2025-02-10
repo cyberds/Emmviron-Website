@@ -1,0 +1,438 @@
+Revenue Projections Report
+==================================================
+
+
+Revenue Projections for 2025:
+Month 1:
+  Users: 0
+  Subscriptions: ₦0.00
+  Advertisements: ₦0.00
+  Total Revenue: ₦0.00
+--------------------------------------------------
+Month 2:
+  Users: 0
+  Subscriptions: ₦0.00
+  Advertisements: ₦0.00
+  Total Revenue: ₦0.00
+--------------------------------------------------
+Month 3:
+  Users: 0
+  Subscriptions: ₦0.00
+  Advertisements: ₦0.00
+  Total Revenue: ₦0.00
+--------------------------------------------------
+Month 4:
+  Users: 0
+  Subscriptions: ₦0.00
+  Advertisements: ₦0.00
+  Total Revenue: ₦0.00
+--------------------------------------------------
+Month 5:
+  Users: 833
+  Subscriptions: ₦391,510.00
+  Advertisements: ₦294,068.80
+  Total Revenue: ₦685,578.80
+--------------------------------------------------
+Month 6:
+  Users: 2144
+  Subscriptions: ₦1,007,680.00
+  Advertisements: ₦646,714.89
+  Total Revenue: ₦1,654,394.89
+--------------------------------------------------
+Month 7:
+  Users: 3455
+  Subscriptions: ₦1,623,850.00
+  Advertisements: ₦999,360.98
+  Total Revenue: ₦2,623,210.98
+--------------------------------------------------
+Month 8:
+  Users: 4766
+  Subscriptions: ₦2,240,020.00
+  Advertisements: ₦1,352,007.06
+  Total Revenue: ₦3,592,027.06
+--------------------------------------------------
+Month 9:
+  Users: 6077
+  Subscriptions: ₦2,856,190.00
+  Advertisements: ₦1,704,653.15
+  Total Revenue: ₦4,560,843.15
+--------------------------------------------------
+Month 10:
+  Users: 7388
+  Subscriptions: ₦3,472,360.00
+  Advertisements: ₦2,057,299.24
+  Total Revenue: ₦5,529,659.24
+--------------------------------------------------
+Month 11:
+  Users: 8699
+  Subscriptions: ₦4,088,530.00
+  Advertisements: ₦2,409,945.33
+  Total Revenue: ₦6,498,475.33
+--------------------------------------------------
+Month 12:
+  Users: 10000
+  Subscriptions: ₦4,700,000.00
+  Advertisements: ₦2,759,901.52
+  Total Revenue: ₦7,459,901.52
+--------------------------------------------------
+
+Yearly Totals for 2025:
+  Subscriptions: ₦20,380,140.00
+  Advertisements: ₦12,223,950.97
+  Total Revenue: ₦32,604,090.97
+  CPM Revenue: ₦46,427.69
+  CPC Revenue: ₦6,995,953.80
+  CPA Revenue: ₦4,621,569.48
+  Push Revenue: ₦560,000.00
+  Daily Subscribers: 3469
+  Monthly Subscribers: 8672
+  Annual Subscribers: 867
+==================================================
+
+Revenue Projections for 2026:
+Month 1:
+  Users: 13333
+  Subscriptions: ₦6,266,510.00
+  Advertisements: ₦3,656,445.70
+  Total Revenue: ₦9,922,955.70
+--------------------------------------------------
+Month 2:
+  Users: 16667
+  Subscriptions: ₦7,833,490.00
+  Advertisements: ₦4,553,258.86
+  Total Revenue: ₦12,386,748.86
+--------------------------------------------------
+Month 3:
+  Users: 20000
+  Subscriptions: ₦9,400,000.00
+  Advertisements: ₦5,449,803.04
+  Total Revenue: ₦14,849,803.04
+--------------------------------------------------
+Month 4:
+  Users: 23333
+  Subscriptions: ₦10,966,510.00
+  Advertisements: ₦6,346,347.22
+  Total Revenue: ₦17,312,857.22
+--------------------------------------------------
+Month 5:
+  Users: 26667
+  Subscriptions: ₦12,533,490.00
+  Advertisements: ₦7,243,160.38
+  Total Revenue: ₦19,776,650.38
+--------------------------------------------------
+Month 6:
+  Users: 30000
+  Subscriptions: ₦14,100,000.00
+  Advertisements: ₦8,139,704.56
+  Total Revenue: ₦22,239,704.56
+--------------------------------------------------
+Month 7:
+  Users: 33333
+  Subscriptions: ₦15,666,510.00
+  Advertisements: ₦9,036,248.74
+  Total Revenue: ₦24,702,758.74
+--------------------------------------------------
+Month 8:
+  Users: 36667
+  Subscriptions: ₦17,233,490.00
+  Advertisements: ₦9,933,061.91
+  Total Revenue: ₦27,166,551.91
+--------------------------------------------------
+Month 9:
+  Users: 40000
+  Subscriptions: ₦18,800,000.00
+  Advertisements: ₦10,829,606.08
+  Total Revenue: ₦29,629,606.08
+--------------------------------------------------
+Month 10:
+  Users: 43333
+  Subscriptions: ₦20,366,510.00
+  Advertisements: ₦11,726,150.26
+  Total Revenue: ₦32,092,660.26
+--------------------------------------------------
+Month 11:
+  Users: 46667
+  Subscriptions: ₦21,933,490.00
+  Advertisements: ₦12,622,963.43
+  Total Revenue: ₦34,556,453.43
+--------------------------------------------------
+Month 12:
+  Users: 50000
+  Subscriptions: ₦23,500,000.00
+  Advertisements: ₦13,519,507.60
+  Total Revenue: ₦37,019,507.60
+--------------------------------------------------
+
+Yearly Totals for 2026:
+  Subscriptions: ₦178,600,000.00
+  Advertisements: ₦103,056,257.78
+  Total Revenue: ₦281,656,257.78
+  CPM Revenue: ₦406,866.00
+  CPC Revenue: ₦61,308,575.34
+  CPA Revenue: ₦40,500,816.44
+  Push Revenue: ₦840,000.00
+  Daily Subscribers: 30400
+  Monthly Subscribers: 76000
+  Annual Subscribers: 7600
+==================================================
+
+Revenue Projections for 2027:
+Month 1:
+  Users: 54167
+  Subscriptions: ₦25,458,490.00
+  Advertisements: ₦14,640,389.57
+  Total Revenue: ₦40,098,879.57
+--------------------------------------------------
+Month 2:
+  Users: 58333
+  Subscriptions: ₦27,416,510.00
+  Advertisements: ₦15,761,002.54
+  Total Revenue: ₦43,177,512.54
+--------------------------------------------------
+Month 3:
+  Users: 62500
+  Subscriptions: ₦29,375,000.00
+  Advertisements: ₦16,881,884.50
+  Total Revenue: ₦46,256,884.50
+--------------------------------------------------
+Month 4:
+  Users: 66667
+  Subscriptions: ₦31,333,490.00
+  Advertisements: ₦18,002,766.47
+  Total Revenue: ₦49,336,256.47
+--------------------------------------------------
+Month 5:
+  Users: 70833
+  Subscriptions: ₦33,291,510.00
+  Advertisements: ₦19,123,379.44
+  Total Revenue: ₦52,414,889.44
+--------------------------------------------------
+Month 6:
+  Users: 75000
+  Subscriptions: ₦35,250,000.00
+  Advertisements: ₦20,244,261.40
+  Total Revenue: ₦55,494,261.40
+--------------------------------------------------
+Month 7:
+  Users: 79167
+  Subscriptions: ₦37,208,490.00
+  Advertisements: ₦21,365,143.37
+  Total Revenue: ₦58,573,633.37
+--------------------------------------------------
+Month 8:
+  Users: 83333
+  Subscriptions: ₦39,166,510.00
+  Advertisements: ₦22,485,756.34
+  Total Revenue: ₦61,652,266.34
+--------------------------------------------------
+Month 9:
+  Users: 87500
+  Subscriptions: ₦41,125,000.00
+  Advertisements: ₦23,606,638.30
+  Total Revenue: ₦64,731,638.30
+--------------------------------------------------
+Month 10:
+  Users: 91667
+  Subscriptions: ₦43,083,490.00
+  Advertisements: ₦24,727,520.27
+  Total Revenue: ₦67,811,010.27
+--------------------------------------------------
+Month 11:
+  Users: 95833
+  Subscriptions: ₦45,041,510.00
+  Advertisements: ₦25,848,133.24
+  Total Revenue: ₦70,889,643.24
+--------------------------------------------------
+Month 12:
+  Users: 100000
+  Subscriptions: ₦47,000,000.00
+  Advertisements: ₦26,969,015.21
+  Total Revenue: ₦73,969,015.21
+--------------------------------------------------
+
+Yearly Totals for 2027:
+  Subscriptions: ₦434,750,000.00
+  Advertisements: ₦249,655,890.65
+  Total Revenue: ₦684,405,890.65
+  CPM Revenue: ₦990,397.50
+  CPC Revenue: ₦149,237,979.45
+  CPA Revenue: ₦98,587,513.70
+  Push Revenue: ₦840,000.00
+  Daily Subscribers: 74000
+  Monthly Subscribers: 185000
+  Annual Subscribers: 18500
+==================================================
+
+Revenue Projections for 2028:
+Month 1:
+  Users: 108333
+  Subscriptions: ₦50,916,510.00
+  Advertisements: ₦29,210,510.14
+  Total Revenue: ₦80,127,020.14
+--------------------------------------------------
+Month 2:
+  Users: 116667
+  Subscriptions: ₦54,833,490.00
+  Advertisements: ₦31,452,274.07
+  Total Revenue: ₦86,285,764.07
+--------------------------------------------------
+Month 3:
+  Users: 125000
+  Subscriptions: ₦58,750,000.00
+  Advertisements: ₦33,693,769.01
+  Total Revenue: ₦92,443,769.01
+--------------------------------------------------
+Month 4:
+  Users: 133333
+  Subscriptions: ₦62,666,510.00
+  Advertisements: ₦35,935,263.94
+  Total Revenue: ₦98,601,773.94
+--------------------------------------------------
+Month 5:
+  Users: 141667
+  Subscriptions: ₦66,583,490.00
+  Advertisements: ₦38,177,027.87
+  Total Revenue: ₦104,760,517.87
+--------------------------------------------------
+Month 6:
+  Users: 150000
+  Subscriptions: ₦70,500,000.00
+  Advertisements: ₦40,418,522.81
+  Total Revenue: ₦110,918,522.81
+--------------------------------------------------
+Month 7:
+  Users: 158333
+  Subscriptions: ₦74,416,510.00
+  Advertisements: ₦42,660,017.75
+  Total Revenue: ₦117,076,527.75
+--------------------------------------------------
+Month 8:
+  Users: 166667
+  Subscriptions: ₦78,333,490.00
+  Advertisements: ₦44,901,781.67
+  Total Revenue: ₦123,235,271.67
+--------------------------------------------------
+Month 9:
+  Users: 175000
+  Subscriptions: ₦82,250,000.00
+  Advertisements: ₦47,143,276.61
+  Total Revenue: ₦129,393,276.61
+--------------------------------------------------
+Month 10:
+  Users: 183333
+  Subscriptions: ₦86,166,510.00
+  Advertisements: ₦49,384,771.55
+  Total Revenue: ₦135,551,281.55
+--------------------------------------------------
+Month 11:
+  Users: 191667
+  Subscriptions: ₦90,083,490.00
+  Advertisements: ₦51,626,535.47
+  Total Revenue: ₦141,710,025.47
+--------------------------------------------------
+Month 12:
+  Users: 200000
+  Subscriptions: ₦94,000,000.00
+  Advertisements: ₦53,868,030.41
+  Total Revenue: ₦147,868,030.41
+--------------------------------------------------
+
+Yearly Totals for 2028:
+  Subscriptions: ₦869,500,000.00
+  Advertisements: ₦498,471,781.30
+  Total Revenue: ₦1,367,971,781.30
+  CPM Revenue: ₦1,980,795.00
+  CPC Revenue: ₦298,475,958.90
+  CPA Revenue: ₦197,175,027.40
+  Push Revenue: ₦840,000.00
+  Daily Subscribers: 148000
+  Monthly Subscribers: 370000
+  Annual Subscribers: 37000
+==================================================
+
+Revenue Projections for 2029:
+Month 1:
+  Users: 223583
+  Subscriptions: ₦105,084,010.00
+  Advertisements: ₦60,211,625.17
+  Total Revenue: ₦165,295,635.17
+--------------------------------------------------
+Month 2:
+  Users: 247167
+  Subscriptions: ₦116,168,490.00
+  Advertisements: ₦66,555,488.91
+  Total Revenue: ₦182,723,978.91
+--------------------------------------------------
+Month 3:
+  Users: 270750
+  Subscriptions: ₦127,252,500.00
+  Advertisements: ₦72,899,083.67
+  Total Revenue: ₦200,151,583.67
+--------------------------------------------------
+Month 4:
+  Users: 294333
+  Subscriptions: ₦138,336,510.00
+  Advertisements: ₦79,242,678.42
+  Total Revenue: ₦217,579,188.42
+--------------------------------------------------
+Month 5:
+  Users: 317917
+  Subscriptions: ₦149,420,990.00
+  Advertisements: ₦85,586,542.17
+  Total Revenue: ₦235,007,532.17
+--------------------------------------------------
+Month 6:
+  Users: 341500
+  Subscriptions: ₦160,505,000.00
+  Advertisements: ₦91,930,136.93
+  Total Revenue: ₦252,435,136.93
+--------------------------------------------------
+Month 7:
+  Users: 365083
+  Subscriptions: ₦171,589,010.00
+  Advertisements: ₦98,273,731.68
+  Total Revenue: ₦269,862,741.68
+--------------------------------------------------
+Month 8:
+  Users: 388667
+  Subscriptions: ₦182,673,490.00
+  Advertisements: ₦104,617,595.43
+  Total Revenue: ₦287,291,085.43
+--------------------------------------------------
+Month 9:
+  Users: 412250
+  Subscriptions: ₦193,757,500.00
+  Advertisements: ₦110,961,190.18
+  Total Revenue: ₦304,718,690.18
+--------------------------------------------------
+Month 10:
+  Users: 435833
+  Subscriptions: ₦204,841,510.00
+  Advertisements: ₦117,304,784.94
+  Total Revenue: ₦322,146,294.94
+--------------------------------------------------
+Month 11:
+  Users: 459417
+  Subscriptions: ₦215,925,990.00
+  Advertisements: ₦123,648,648.69
+  Total Revenue: ₦339,574,638.69
+--------------------------------------------------
+Month 12:
+  Users: 483000
+  Subscriptions: ₦227,010,000.00
+  Advertisements: ₦129,992,243.44
+  Total Revenue: ₦357,002,243.44
+--------------------------------------------------
+
+Yearly Totals for 2029:
+  Subscriptions: ₦1,992,565,000.00
+  Advertisements: ₦1,141,223,749.64
+  Total Revenue: ₦3,133,788,749.64
+  CPM Revenue: ₦4,539,232.65
+  CPC Revenue: ₦683,993,960.96
+  CPA Revenue: ₦451,850,556.03
+  Push Revenue: ₦840,000.00
+  Daily Subscribers: 339160
+  Monthly Subscribers: 847900
+  Annual Subscribers: 84790
+==================================================
