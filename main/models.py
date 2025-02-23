@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.safestring import mark_safe
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 class JobOpening(models.Model):
     name = models.CharField(max_length=255)
@@ -100,7 +101,7 @@ class Contacts(models.Model):
         verbose_name_plural = "Contacts"
 
 
-from django.db import models
+
 
 class FAQ(models.Model):
     CATEGORY_CHOICES = (
@@ -118,3 +119,34 @@ class FAQ(models.Model):
     def __str__(self):
         return self.question
 
+
+class Testimonial(models.Model):
+    name = models.CharField(max_length=100)
+    position = models.CharField(max_length=200)
+    content = models.TextField()
+    image = models.ImageField(upload_to='testimonials/')
+    rating = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(5)]
+    )
+    featured = models.BooleanField(default=True)
+    
+    def __str__(self):
+        return f"{self.name} - {self.position}"
+
+
+class Features(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
+class Pricing(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.CharField(max_length=20)
+    description = models.TextField()
+    features = models.ManyToManyField(Features)
+    is_popular = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.name} ({self.price})"

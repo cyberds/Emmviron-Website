@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import ContactForm, JobApplicationForm
-from .models import Contacts, JobOpening
+from .models import Contacts, JobOpening, Pricing
 
 import mailchimp_marketing as MailchimpMarketing
 from mailchimp_marketing.api_client import ApiClientError
@@ -41,7 +41,11 @@ def add_to_mailchimp(first_name, last_name, email, service, subject, message, co
 
 
 def home(request):
-    return render(request, 'main/index.html')
+    prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
+    context = {
+        'prices': prices
+    }
+    return render(request, 'main/index.html', context)
 
 def about(request):
     return render(request, 'main/about.html')

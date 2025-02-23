@@ -1,0 +1,94 @@
+{% load static %}
+<section class="pre-footer">
+    <div class="row-1">
+        <h3>Let's Get Your Success Journey Started</h3>
+        <a href="{% url 'contact' %}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-arrow-right"></i></a>
+    </div>
+    <div class="row-2">
+        <a href="{% url 'contact' %}">Let's talk</a>
+    </div>
+
+</section>
+
+<style>
+    .pre-footer {
+        width: 100%;
+        max-width: 1400px;
+        background-color: black;
+        color: white;
+    }
+    .pre-footer .row-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+    }   
+
+    .pre-footer .row-1 a {
+        color: var(--primary-color);
+        font-size: 70px;
+        rotate: -45deg;
+        transition: .3s ease;
+    }
+
+    .pre-footer .row-1 a:hover {
+        rotate: 0deg;
+    }
+
+    .pre-footer .row-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 440px;
+        background: url('{% static "main/img/footer_bg.png" %}');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .pre-footer .row-2 a {
+        position: relative;
+        background-color: white;
+        color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        text-align: center;
+        transition: .3s ease-out;
+    }
+
+    .pre-footer .row-2 a:hover {
+        outline: 30px solid #ffffff30;
+        font-weight: bold;        
+    }
+
+    @media(min-width: 1200px){
+        .pre-footer .row-1 {
+            padding: 20px 100px;
+        }
+        .pre-footer .row-1 h3 {
+            width: 30%;
+        }
+    }
+
+    @media(max-width: 700px){
+        .pre-footer .row-1 {
+            padding: 20px 10%;
+            gap: 20px;
+        }
+        .pre-footer .row-1 h3 {
+            font-size: 20px;
+        }
+
+        .pre-footer .row-2{
+            height: 240px;
+        }
+    }
+
+    
+</style>
