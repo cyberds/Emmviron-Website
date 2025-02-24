@@ -317,11 +317,14 @@ hr {
 .pricing .content .card a {
     background-color: #0B3050;
     color: white;
-    padding: 12px;
+    padding: 8px 12px;
     border-radius: 12px;
     text-align: center;
     text-decoration: none;
     transition: .3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pricing .content .card a:hover {
@@ -349,7 +352,176 @@ hr {
 }
 
 
+/* Ready to start section */
+.ready-to-start {
+    padding: 40px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
+.ready-to-start .small-heading {
+    text-align: left;
+}
+
+.ready-to-start img {
+    width: 500px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.ready-to-start .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.ready-to-start .content * {
+    width: 100%;
+}
+
+.ready-to-start .content a {
+    background-color: var(--gold);
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s ease-in;
+    width: fit-content;
+}
+
+.ready-to-start .content a:hover {
+    scale: 0.95;
+}
+
+
+
+/* Why emmviron */
+.why-emmviron {
+    padding: 40px 10%;
+}
+
+.why-emmviron h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.why-emmviron .content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why-emmviron .content h4 {
+    font-weight: 500;
+}
+
+.why-emmviron .content .box1 {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #E9F3FC;
+    border-radius: 12px;
+    font-weight: 900;
+}
+
+.why-emmviron .content .box1 h1 {
+    color: var(--primary-color);
+}
+
+.why-emmviron .content .box2 {
+    background-color: #E9F3FC;
+    border-radius: 12px;
+    width: 500px;
+    display: grid;
+    align-items: space-between;
+}
+
+.why-emmviron .content .box2 .text {
+    padding: 20px 40px;
+}
+
+.why-emmviron .content .box2 p {
+    text-align: justify;
+    font-size: medium;
+    font-family: 'Inter';
+}
+
+.why-emmviron .content .box2 .image-spread {
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.why-emmviron .content .box2 .image-spread img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.why-emmviron .content .box2 .image-spread img:nth-child(1){
+    border-radius: 0 0 0 12px;
+}
+.why-emmviron .content .box2 .image-spread img:nth-child(2) {
+    border-radius: 0 0 12px 0;
+}
+
+.why-emmviron .box3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(232, 243, 252);
+    border-radius: 12px;
+    text-align: justify;
+    font-size: medium;
+}
+
+.why-emmviron .box3 .textarea {
+    padding: 40px;
+    width: 50%;
+}
+
+
+.why-emmviron .box3 .small-heading {
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.why-emmviron .box3 ul {
+    margin-bottom: 30px;
+}
+
+.why-emmviron .box3 a {
+    border-radius: 7px;
+    background-color: var(--gold);
+    padding: 8px 20px;
+    transition: .3s ease-in;
+}
+
+.why-emmviron .box3 a:hover {
+    scale: 0.95;
+    text-decoration: none;
+    color: inherit;
+}
+
+.why-emmviron .box3 img {
+    border-radius: 0 12px 12px 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: bottom center;
+}
 
 
 
