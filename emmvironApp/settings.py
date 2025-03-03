@@ -36,7 +36,8 @@ ALLOWED_HOSTS = [
     'https://emmviron.com',
     'emmviron-website.onrender.com',
     'https://emmviron-website.onrender.com',
-    'localhost'
+    'localhost',
+    '127.0.0.1',
 ]
 
 
