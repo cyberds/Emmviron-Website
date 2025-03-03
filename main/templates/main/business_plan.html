@@ -1,67 +1,324 @@
 {% extends "main/includes/base.html" %}
 {% load static %}
 
-{% block title %}Business Plan{% endblock title %}
+    {% block title %}Welcome to Emmviron{% endblock title %}
 
-{% block additional_head %}
-  <link rel="stylesheet" href="{% static 'main/css/services.css' %}">
-{% endblock additional_head %}
-    
+    {% block additional_head %}
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="{% static 'main/css/business_plan.css' %}">
+        <script src="{% static 'main/js/main.js' %}" defer></script>
+    {% endblock additional_head %}
 
-{% block content %}
 
-    <section class="services-hero">
-      <div class="services-hero-writeup">
-        <div><h2>Business Plan</h2></div>
-        <p>Emmviron specializes in crafting comprehensive business plans that serve as strategic roadmaps for companies. This meticulously designed document outlines your organization's goals, operations, and financial projections, providing you with a clear path to success.
-          We are your trusted partner in planning and executing your business vision.</p>
-      </div>
-      <div class="services-hero-img business_plan_top_img"></div>
+    {% block content %}
+    <section class="hero">
+        <h2>Transform Your Vision into Reality with <span>a Tailored Business Plan</span></h2>
+        <p>we create exceptional business plans that open doors to new opportunities, secure investments, and drive your success.</p>
+        <div class="btn btn-primary px-4 py-3">Get Your Plan Now</div>
+        <div class="picture-spread">
+            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-making-business-pitch_11zon.jpeg?updatedAt=1740196183631" alt="Business plan Company in Califonia woman-making-business-pitch">
+            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/representation-user.jpeg?updatedAt=1740195986834" alt="Pitch Deck Consultant representation-user">
+        </div>
+        <div class="rating">
+            <div class="stars">
+                <div class="icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-text">5.0</div>
+            </div>
+            <div class="text">Average client rating</div>
+        </div>
     </section>
 
-    <section class="section2-services-we-provide">
-      <h4 class="center">Here's how we provide these services:</h4>
-      <div class="cards">
-        <div class="services-cards">
-          <h4>Needs Assessment</h4>
-          <p>We begin by conducting an in-depth assessment to understand our client's specific needs, goals, and the purpose of the business plan</p>
+    {% include "main/includes/business_plan_rating.html" %}
+
+    <section class="section3">
+        <div class="text">More than 50+ business plan done</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/Jambitts%20copy.png?updatedAt=1716026111097" alt="Jambitts"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/shellingten.png?updatedAt=1716026111415" alt="Shellingten"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/novidad.png?updatedAt=1716026111407" alt="Novidad Foods"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/found.png?updatedAt=1716026111446" alt="Found"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/totus.png?updatedAt=1716026111995" alt="Totus"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/pixl.png?updatedAt=1716026110781" alt="Pixl"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/roadrunner.png?updatedAt=1716027577055" alt="Road Runner"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/maxitech.png?updatedAt=1716026110172" alt="Maxitech"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/deeski.png?updatedAt=1716026109848" alt="Deeski"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/primavera.png?updatedAt=1716026109744" alt="Primavera"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/descasio.png?updatedAt=1716026109609" alt="Descasio"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/UPAJ.png?updatedAt=1716026773700" alt="UPAJ"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/clients/PLC.png?updatedAt=1716026773682" alt="Principle Legal Consult"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/AG%20Mortgage%20Emmviron.webp?updatedAt=1722148635691" alt="AG Mortgage Bank"></div>
+                <div class="swiper-slide"><img src="https://ik.imagekit.io/s3jkgwyie/3metrics2.webp?updatedAt=1722148635704" alt="3Metrics2"></div>
+            </div>
         </div>
-        <div class="services-cards">
-          <h4>Market Research</h4>
-          <p>Before drafting the plan, we conduct market research to gather data on the industry, market trends, competition, and customer demographics. This research forms the foundation of your business plan.</p>
+    </section>
+
+
+    <section class="our-services">
+        <div class="small-heading">Our Services</div>
+        <h2>Comprehensive Business Plan Services</h2>
+        <div class="content">
+            <div class="service-card">
+                <div class="icons"> <i class="fa-solid fa-chart-pie"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                <h3>Pitch Deck Development</h3>
+                <p>Crafting compelling and investor-ready presentations that effectively communicate your business vision and value proposition.</p>
+            </div>
+            <div class="service-card">
+                <div class="icons"> <i class="fa-solid fa-file-contract"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                <h3>Proposal Writing</h3>
+                <p>Developing persuasive and professional proposals that align with your strategic objectives and target audience.</p>
+            </div>
+            <div class="service-card">
+                <div class="icons"> <i class="fa-solid fa-table"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                <h3>Financial Modeling & Capital Valuation</h3>
+                <p>Designing detailed financial models and accurate valuation frameworks to guide investment decisions and business growth.</p>
+            </div>
+            <div class="service-card">
+                <div class="icons"> <i class="fa-solid fa-chart-column"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                <h3>Market Survey & Intelligence Report</h3>
+                <p>Conducting in-depth market analysis to provide actionable insights, competitor benchmarking, and strategic recommendations.</p>
+            </div>
+            <div class="service-card">
+                <div class="icons"> <i class="fa-solid fa-book"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                <h3>Feasibility Study Report</h3>
+                <p>Preparing thorough feasibility studies that evaluate the viability, risks, and opportunities of your business ideas or expansion plans.</p>
+            </div>
+            <div class="service-card">
+                <div class="icons"> <i class="fa-solid fa-chess-knight"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                <h3>Strategic Business Plans</h3>
+                <p>Plans tailored to guide you from vision to execution, ensuring sustained 	success.</p>
+            </div>
         </div>
-        <div class="services-cards">
-          <h4>SWOT Analysis</h4>
-          <p>We perform a SWOT analysis (Strengths, Weaknesses, Opportunities, and Threats) to identify internal and external factors affecting your business.</p>
+    </section>
+
+    <section class="proven-success">
+        <h2>Emmviron's Proven Process to Your Success</h2>
+        <div class="content">
+            <div class="card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Comprehensive Approach</h3>
+                <p>We analyze every aspect of your business for accuracy and impact.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Expert Insights</h3>
+                <p> Benefit from years of experience in business analytics and strategy consulting.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-crosshairs"></i>
+                <h3>Tailored Solutions</h3>
+                <p>Our plans are designed to meet your unique goals and industry standards.</p>
+            </div>
         </div>
-        <div class="services-cards">
-          <h4>Goal Setting</h4>
-          <p>Working closely with the clients, Emmviron helps define clear, achievable business goals, both short-term and long-term.</p>
+    </section>
+
+
+    <section class="pricing">
+        <div class="small-heading">Our Offer</div>
+        <h2>Flexible Pricing to Fit Your Needs</h2>
+        <div class="content">
+            {% for card in prices %}
+                <div class="card">
+                    <div class="desc">
+                        <p>Basic</p>
+                        {% if card.is_popular %}
+                            <div class="tag">Most Popular</div>
+                        {% endif %}
+                    </div>
+                    <h2>{{ card.price }}</h2>
+                    <p>{{ card.description }}</p>
+                    <a href="#">Request Invoice</a>
+                    <div class="features">
+                        <div class="line"></div>
+                        <div class="text">FEATURES</div>
+                        <div class="line"></div>
+                    </div>
+                    <ul class="features-list">
+                        {% for feature in card.features.all %}
+                            <li class="feature">{{feature.name}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
         </div>
-        <div class="services-cards">
-          <h4>Business Strategy</h4>
-          <p>Emmviron assists in formulating a detailed business strategy which outlines how our potential clients would achieve objectives and overcome potential</p>
+    </section>
+    
+
+    {% include "main/includes/ready_to_start.html" %}
+
+    <section class="why-emmviron">
+        <h2>Why Choose Emmviron?</h2>
+        <div class="content">
+            <div class="box1">
+                <div class="part">
+                    <h1>250+</h1>
+                    <h4>Successful business plan with happy client</h4>
+                </div>
+                <div class="part">
+                    <h1>5.0</h1>
+                    <h4>Rating</h4>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="text">
+                    <h4>Market Research</h4>
+                    <p>Understanding your market is crucial to business success. Emmviron conducts extensive market research to uncover untapped opportunities, analyze competitors, and position your business effectively.</p>
+                </div>
+                <div class="image-spread">
+                    <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/7334f9e1c4652ce1cf242f68340d8a7b_11zon.jpg?updatedAt=1740375929644" alt="">
+                    <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/0248dda7999db27f6579c77a06fee713_11zon.jpg?updatedAt=1740375929480" alt="">
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="textarea">
+                    <div class="small-heading">Know Before You Leap</div>
+                    <h4>Feasibility Study</h4>
+                    <p>At Emmviron, we provide in-depth feasibility studies to evaluate the viability of your business idea. From financial forecasts to market analysis, our insights help you make informed decisions, reduce risks, and maximize returns.</p>
+                    <ul>
+                        <li>Evaluate market demand, industry trends, and potential challenges.</li>
+                        <li>Recommendations backed by data to guide your decisions.</li>
+                        <li>Identify profitable opportunities before committing resources.</li>
+                    </ul>
+                    <a href="#" target="_blank">Explore plans</a>
+                </div>
+                <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/46e6eeb8cc5ef5473cc2374016bc0a3b_11zon.jpg?updatedAt=1740377940853" alt="">
+            </div>
         </div>
-        <div class="services-cards">
-          <h4>Business Model</h4>
-          <p>We work with our clients to refine or develop a clear and sustainable business model, including revenue streams and pricing strategies.</p>
+    </section>
+
+    <section class="sample-work">
+        <div class="content">
+            <div class="small-heading">Sample Work</div>
+            <h1>Business plan for a Lorem ipsum dolor that helps them secure fund</h1>
         </div>
-        <div class="services-cards">
-          <h4>Operational Plan</h4>
-          <p>Emmviron outlines the day-to-day operations of clients, including supply chains, production processes, and staffing requirements.</p>
-        </div>
-        <div class="services-cards">
-          <h4>Marketing and Sales Strategy</h4>
-          <p>A marketing and sales strategy is devised, which includes target audiences, advertising channels, and sales tactics to attract and retain customers.</p>
+        <div class="video-container">
+            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/46e6eeb8cc5ef5473cc2374016bc0a3b_11zon.jpg?updatedAt=1740377940853" alt="">
+            <a class="playbtndiv">
+                <i class="fa-solid fa-play"></i>
+            </div>
         </div>
         
-      </div>
+    </section>
+   
+
+    <section class="videosOnYouTube">
+        <div>
+            <h4>Videos on YouTube</h4>
+        </div>
+        <div class="forvideos">
+            <div class="vidholder">
+                <div id="video1"></div>
+                <a href="https://youtu.be/JLr_DjK2LOs?si=NarcRnkc7e3N8nD2" target="_blank">
+                    <div class="playbtndiv">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="vidholder">
+                <div id="video2"></div>
+                <a href="https://youtu.be/S1LlqnQq1Y8?si=wIdzBCld-jPOXXrq" target="_blank">
+                    <div class="playbtndiv">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="vidholder">
+                <div id="video3"></div>
+                <a href="https://youtu.be/o3vq3JoJnlM?si=XbU6SSN8HNWHBDZs" target="_blank">
+                    <div class="playbtndiv">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="vidholder">
+                <div id="video4"></div>
+                <a href="https://youtu.be/rIyG3PgNCaw?si=nZIG8OVk8_w1I6zO" target="_blank">
+                    <div class="playbtndiv">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="vidholder">
+                <div id="video5"></div>
+                <a href="https://youtu.be/qP7iLMkNjpU?si=Vk1dIDwws2Wt-yKm" target="_blank">
+                    <div class="playbtndiv">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="vidholder">
+                <div id="video6"></div>
+                <a href="https://youtu.be/PkH7-sfRFzk?si=x5ZG3YYyHh0-IgcN" target="_blank">
+                    <div class="playbtndiv">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="https://youtube.com/@emmviron" target="_blank" class="youtubebtn">Watch more videos <i class="fa-solid fa-play"></i></a>
     </section>
 
-    <section class="bottom-photo" id="business_plan_bottom_photo"></section>
 
+    {% include "main/includes/testimonials.html" %}
 
-    {% include 'main/includes/belowMedia.html' %}
     
-{% endblock content %}
+    {% include "main/includes/FAQs.html" %}
 
+    <section class="footer">
+        {% include "main/includes/letsTalk.html" %}
+        {% include "main/includes/footer.html" %}
+    </section>
+    
+    {% endblock content %}
+
+    {% block additionalJS %}
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                function initSwiper() {
+                    let slidesPerView = window.innerWidth >= 768 ? 5 : 3;
+
+                    return new Swiper('.swiper-container', {
+                        slidesPerView: slidesPerView,
+                        spaceBetween: 10,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        autoplay: {
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        },
+                        // breakpoints: {
+                        //     480: {
+                        //         slidesPerView: 1,
+                        //         spaceBetween: 5,
+                        //     },
+                        //     768: {
+                        //         slidesPerView: 3,
+                        //         spaceBetween: 10,
+                        //     }
+                        // }
+                    });
+                }
+
+                var swiper = initSwiper();
+
+                window.addEventListener('resize', function() {
+                    swiper.destroy(true, true);
+                    swiper = initSwiper();
+                });
+            });
+        </script>
+    {% endblock additionalJS %}
+
+</body>
+</html>

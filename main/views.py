@@ -85,7 +85,11 @@ def contact(request):
 
 
 def business_plan(request):
-    return render(request, 'main/business_plan.html')
+    prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
+    context = {
+        'prices': prices
+    }
+    return render(request, 'main/business_plan.html', context)
 
 def career(request):
     jobs = JobOpening.objects.filter(is_active=True)

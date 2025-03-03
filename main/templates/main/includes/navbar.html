@@ -1,11 +1,13 @@
+
 <nav>
     <div class="logo">
       <a href="{% url 'home' %}"><img src="https://ik.imagekit.io/s3jkgwyie/emmviron_logo.png?updatedAt=1704116009403" alt="Logo"></a>
     </div>
 
     <div class="menu">
-      <a href="{% url 'about' %}">About</a>
-      <a href="#" class="offcanlink dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-hover="true" aria-haspopup="true" aria-expanded="false">
+      <a href="{% url 'home' %}"><span>Home</span> <i class="fa-solid fa-house"></i></a>
+      <a href="{% url 'about' %}"><span>About us</span> <i class="fa-solid fa-building"></i></a>
+      <a href="#" class="offcanlink dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Services
       </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -17,11 +19,13 @@
           <a class="dropdown-item" href="{% url 'strategic_business' %}">Strategic Business Advisory</a>
           <a class="dropdown-item" href="{% url 'operational_setup' %}">Operational Setup</a>
         </div>
-      <a href="{% url 'career' %}">Offers</a>
+      <a href="{% url 'blog' %}"><span>Blog</span> <i class="fa-brands fa-medium"></i></a>
+      <a href="{% url 'career' %}"><span>Career</span> <i class="fa-solid fa-briefcase"></i></a>
     </div>
 
-    <a href="{% url 'contact' %}" class="contact-btn">Schedule a Free Consultation</a>
-
+    <div class="contact-button">
+      <a href="{% url 'contact' %}" class="btn btn-primary btn-sm">Contact Us <i class="fa-solid fa-address-book"></i></a>
+    </div>
 
     <div class="hamburger" onclick="toggleOffcanvas()">
         <div class="ham1"></div>
@@ -54,9 +58,3 @@
        
     </div>
 </nav>
-
-<Script>
-    $(document).ready(function() {
-        $('.dropdown-toggle').dropdownHover();
-    });
-</Script>

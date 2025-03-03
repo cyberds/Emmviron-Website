@@ -1,65 +1,59 @@
-.logo img{
-    height: 50px;
+.logo img {
+    width: 120px;
 }
 
 nav {
     width: 100vw;
-    background-color: white;
+    background-color: transparent;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 8%;
-    font-family: 'Inter', 'poppins', sans-serif;
-    font-weight: 600;
+    justify-content: space-evenly;
+    padding-left: 50px;
 }
 
-nav a, nav {
+nav a,
+nav {
     color: black;
-    font-size: small;
+    font-size: medium;
 }
 
 nav .menu a {
-    min-width: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: .3s ease;
-}
-
-nav .menu a:hover {
-    text-decoration: underline;
-    text-underline-offset: 1.5rem;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--primary-color);
-    color: inherit;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.contact-btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 16px 24px;
-    font-size: 16px;
+    min-width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    transition: .3s ease;
 }
 
-.contact-btn:hover {
-    cursor: pointer;
-    background-color: var(--secondary-color);
-    text-decoration: none;
+nav a:hover {
+    background: #128AC9;
     color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+    transition: ease-in-out 0.6s;
 }
 
+nav .logo a:hover {
+    background: transparent;
+    opacity: .4;
+}
+
+nav span {
+    font-weight: normal;
+}
+
+nav .menu a i {
+    display: none;
+}
+
+nav a:hover i {
+    display: initial;
+}
+
+nav a:hover span {
+    display: none;
+}
 
 .menu {
     display: flex;
@@ -81,7 +75,7 @@ nav .menu a:hover {
 .ham2 {
     width: 30px;
     height: 8px;
-    background-color:rgb(35, 35, 142);
+    background-color: rgb(35, 35, 142);
     border-radius: 5px;
 }
 
@@ -106,15 +100,9 @@ nav .menu a:hover {
     display: none;
 }
 
-@media(min-width: 751px){
-    .hamoverlay,
-    .hamburger {
-        position: fixed;
-    }
-}
 
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
     body {
         padding-top: unset;
     }
@@ -130,7 +118,8 @@ nav .menu a:hover {
         gap: 3px;
     }
 
-    .menu, .contact-button{
+    .menu,
+    .contact-button {
         display: none;
     }
 
@@ -159,7 +148,8 @@ nav .menu a:hover {
 
     .offcanlink {
         margin-left: 10px;
-        border-bottom: 2px dotted; /* Add dotted lines below all offcanlink items */
+        border-bottom: 2px dotted;
+        /* Add dotted lines below all offcanlink items */
         color: white;
         text-decoration: none;
         padding-bottom: 5px;
@@ -169,7 +159,7 @@ nav .menu a:hover {
     .offcanlink:last-child {
         border-bottom: none;
         text-decoration: none;
-      }
+    }
 
     .offcanvas .btn {
         width: 20vw;
@@ -186,9 +176,8 @@ nav .menu a:hover {
         right: 0;
         z-index: 1000;
         transition: ease-in 2s;
-        position: relative;
     }
-    
+
     .partner-block-icons {
         gap: 20px 14px;
     }
