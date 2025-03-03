@@ -21,7 +21,7 @@ def blog_list(request):
             })
         return JsonResponse({'blogs': blogs_data})  # Return a JSON response
 
-    return render(request, 'blog/blog_list.html', {'blogs': page_obj})
+    return render(request, 'blog/blog_list.html', {'blogs': page_obj, 'default_image_url': 'https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/0248dda7999db27f6579c77a06fee713_11zon.jpg?updatedAt=1740375929480'})
 
 def blog_detail(request, slug):
     # Get the blog post by its slug

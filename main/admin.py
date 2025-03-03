@@ -16,9 +16,9 @@ class FAQAdmin(admin.ModelAdmin):
     list_filter = ("is_active",)
 
 class TestimonialAdmin(admin.ModelAdmin):
-    list_display = ("name", "position", "content", "image")
+    list_display = ("name", "position", "featured", "content", "image")
     search_fields = ("name", "position", "content")
-    list_filter = ("position",)
+    list_filter = ("position", "featured")
 
 class FeaturesAdmin(admin.ModelAdmin):
     list_display = ("name",)

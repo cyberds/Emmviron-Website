@@ -1,0 +1,87 @@
+<section class="bus-rating">
+        <div class="text">
+            <h2>Why Entrepreneurs and Innovators Trust Emmviron</h2>
+            <p>Whether you are planning to immigrate, raise funds, or refine your strategy, we deliver expertly crafted business plans designed to meet your unique needs.</p>
+            <a href="{% url "business_plan" %}">Create your Business Plan <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="picture-section">
+            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-with-coffee_11zon.jpeg?updatedAt=1740196183636" alt="Best pitch deck and business consultants in the world">
+            <div class="writeup-box">
+                <div class="writeup">
+                    <h4>250+</h4>
+                    <p>Business Plans</p>
+                    <h4>400</h4>
+                    <p>Happy Clients</p>
+                    <h4>5.0</h4>
+                    <p>Ratings</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<style>
+/* bus-rating */
+.bus-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 8%;
+    width: 100vw;
+}
+
+.bus-rating .text,
+.bus-rating .picture-section {
+    width: 500px;
+}
+
+.bus-rating .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.bus-rating .text a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.bus-rating .picture-section {
+    position: relative;
+}
+
+.bus-rating .picture-section img {
+    width: 100%;
+    height: 299px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 24px;
+}
+
+.bus-rating .writeup-box{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    height: fit-content;
+    width: 30%;
+    padding: 20px 20px 0px 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.836);
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.bus-rating .writeup-box .writeup {
+    margin-bottom: 12px;
+}
+
+.bus-rating .writeup-box .writeup h4 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+</style>

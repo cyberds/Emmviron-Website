@@ -16,7 +16,7 @@
         <p>we create exceptional business plans that open doors to new opportunities, secure investments, and drive your success.</p>
         <div class="btn btn-primary px-4 py-3">Get Your Plan Now</div>
         <div class="picture-spread">
-            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-making-business-pitch_11zon.jpeg?updatedAt=1740196183631" alt="Business plan Company in Nigeria woman-making-business-pitch">
+            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-making-business-pitch_11zon.jpeg?updatedAt=1740196183631" alt="Business plan Company in Califonia woman-making-business-pitch">
             <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/representation-user.jpeg?updatedAt=1740195986834" alt="Pitch Deck Consultant representation-user">
         </div>
         <div class="rating">
@@ -34,26 +34,7 @@
         </div>
     </section>
 
-    <section class="section2">
-        <div class="text">
-            <h2>Why Entrepreneurs and Innovators Trust Emmviron</h2>
-            <p>Whether you are planning to immigrate, raise funds, or refine your strategy, we deliver expertly crafted business plans designed to meet your unique needs.</p>
-            <a href="{% url "business_plan" %}">Create your Business Plan <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="picture-section">
-            <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-with-coffee_11zon.jpeg?updatedAt=1740196183636" alt="Best pitch deck and business consultants in the world">
-            <div class="writeup-box">
-                <div class="writeup">
-                    <h4>250+</h4>
-                    <p>Business Plans</p>
-                    <h4>400</h4>
-                    <p>Happy Clients</p>
-                    <h4>5.0</h4>
-                    <p>Ratings</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% include "main/includes/business_plan_rating.html" %}
 
     <section class="section3">
         <div class="text">More than 50+ business plan done</div>
@@ -169,14 +150,7 @@
     </section>
     
 
-    <section class="ready-to-start">
-        <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-making-business-pitch_11zon.jpeg?updatedAt=1740196183631" alt="Get Pitch deck done in a day">
-        <div class="content">
-            <div class="small-heading">Ready to Get Started?</div>
-            <h1>Let Emmviron help you turn your business goals into actionable plans.</h1>
-            <a href="#">Get Your Business Plan Today!</a>
-        </div>
-    </section>
+    {% include "main/includes/ready_to_start.html" %}
 
     <section class="why-emmviron">
         <h2>Why Choose Emmviron?</h2>
@@ -220,7 +194,17 @@
         </div>
     </section>
 
-    
+    <section class="sample-work">
+        <div class="content">
+            <div class="small-heading">Sample Work</div>
+            <h1>Business plan for a Lorem ipsum dolor that helps them secure fund</h1>
+        </div>
+        <div class="video-container">
+            <video src="https://youtu.be/PkH7-sfRFzk?si=x5ZG3YYyHh0-IgcN"></video>
+            
+        </div>
+        
+    </section>
    
 
     <section class="videosOnYouTube">
@@ -280,19 +264,6 @@
         <a href="https://youtube.com/@emmviron" target="_blank" class="youtubebtn">Watch more videos <i class="fa-solid fa-play"></i></a>
     </section>
 
-    <section class="mediafeatured">
-        <div class="mediafeaturedwriteup">
-            <h4>Media We Got Featured</h4>
-            <p>Unveiling Our Media Presence: Diverse, Comprehensive Coverage. Explore Our Extensive Media Footprint</p>
-        </div>
-        <div class="mediafeaturedlogos">
-            <img src="https://ik.imagekit.io/s3jkgwyie/7c7de28434c86fff96b4a59af63ddef0.png?updatedAt=1703362637951" alt="">
-            <img src="https://ik.imagekit.io/s3jkgwyie/ea8d4a903c9d706720739be1288b32f0.png?updatedAt=1703362637343" alt="">
-            <img src="https://ik.imagekit.io/s3jkgwyie/c2ba809cba8dc1a07e6fd93da1c1b968.png?updatedAt=1703362637970" alt="">
-            <img src="https://ik.imagekit.io/s3jkgwyie/2e87b63742b43037a28f96145ae13c8c.png?updatedAt=1703362637497" style="height: 70px;" alt="">
-            <img src="https://ik.imagekit.io/s3jkgwyie/55c23ec74b25cf2cebf56ba6b9391f6b.png?updatedAt=1703362637113" alt="">
-        </div>
-    </section>
 
     {% include "main/includes/testimonials.html" %}
 

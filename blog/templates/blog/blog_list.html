@@ -1,9 +1,55 @@
 {% extends "main/includes/base.html" %}
+{% load static %}
+{% block additional_head %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog_home.css' %}">
+{% endblock additional_head %}
 
 {% block content %}
-    <div class="blog-list">
+    
+    <section class="hero">
+        <div class="small-heading">Emmviron Insights</div>
+        <h1>Writing from Our Team</h1>
+        {% for featured_post in blogs %}
+           {% if featured_post.top_rated %}
+                <div class="hero-block" style="background-image: url('{% if featured_post.image %}{{ featured_post.image.url }}{% else %}https://ik.imagekit.io/s3jkgwyie/emmviron_logo.png?updatedAt=1704116009403{% endif %}')">
+                    <div class="content">
+                        <div class="ln1">Featured Post</div>
+                        <div class="ln2">{{ featured_post.title |safe }}</div>
+                        <p>{{ featured_post.content|truncatewords:20 |safe }}</p>
+                        <p><small>Published on {{ featured_post.published_on }}</small></p>
+                        <a href="{% url 'blog_detail' featured_post.slug %}" class="btn">Read More</a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
+
+    <section class="featured-posts">
+        <h2>Popular Posts</h2>
+        <div class="parent">
+            {% for post in blogs %}
+                {% if not post.top_rated %}
+                    {% if forloop.counter <= 5 %}
+                        <a href="{% url 'blog_detail' post.slug %}" class="post">
+                            <img class="image" src="{% if post.image %}{{ post.image.url }}{% else %}{{default_image_url}}{% endif %}" alt="{{ post.title }}">
+                            <div class="content">
+                                <h3>{{ post.title }}</h3>
+                                <p><small>Published on {{ post.published_on }}</small></p>    
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </section>
+
+    {% include "main/includes/business_plan_rating.html" %}
+    
+
+    <section class="blog-list">
         {% if blogs %}
-            <h1>All Blog Posts</h1>
+            <h1>Latest Posts</h1>
         {% endif %}
 
         <div id="blog-posts">
@@ -12,15 +58,21 @@
             {% endif %}
             {% for blog in blogs %}
                 <div class="blog-item">
-                    <h2><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></h2>
-                    <p>{{ blog.content|truncatewords:50 }}</p>
-                    <p><small>Published on {{ blog.published_on }}</small></p>
+                    {% if blog.image %}
+                        <img src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                    {% else %}
+                        <img src="{{default_image_url}}" alt="Default Blog Image">
+                    {% endif %}
+                    <div class="content">
+                        <h2><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></h2>
+                        <p><small>Published on {{ blog.published_on }}</small></p>
+                    </div>
                 </div>
             {% endfor %}
         </div>
 
         <div id="loading" style="display: none;">Loading...</div>
-    </div>
+    </section>
 
     <script>
         let page = 1;
@@ -55,4 +107,8 @@
             }
         });
     </script>
+
+    {% include "main/includes/ready_to_start.html" %}
+
+    {% include "main/includes/footer.html" %}
 {% endblock %}

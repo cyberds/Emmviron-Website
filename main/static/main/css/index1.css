@@ -88,68 +88,6 @@ hr {
     gap: 5px;
 }
 
-/* section2 */
-.section2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    width: 100vw;
-}
-
-.section2 .text,
-.section2 .picture-section {
-    width: 500px;
-}
-
-.section2 .text{
-    display: flex;
-    flex-direction: column;
-}
-
-.section2 .text a{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--primary-color);
-}
-
-.section2 .picture-section {
-    position: relative;
-}
-
-.section2 .picture-section img {
-    width: 100%;
-    height: 299px;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 24px;
-}
-
-.section2 .writeup-box{
-    position: absolute;
-    top: 13px;
-    left: 20px;
-    height: fit-content;
-    width: 30%;
-    padding: 20px 20px 0px 20px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.836);
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-style: normal;
-    line-height: normal;
-    font-size: 14px;
-}
-
-.section2 .writeup-box .writeup {
-    margin-bottom: 12px;
-}
-
-.section2 .writeup-box .writeup h4 {
-    font-size: 36px;
-    font-weight: 500;
-}
 
 
 .section3 {
@@ -352,52 +290,6 @@ hr {
 }
 
 
-/* Ready to start section */
-.ready-to-start {
-    padding: 40px 8%;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.ready-to-start .small-heading {
-    text-align: left;
-}
-
-.ready-to-start img {
-    width: 500px;
-    height: 100%;
-    border-radius: 12px;
-}
-
-.ready-to-start .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 20px;
-}
-
-.ready-to-start .content * {
-    width: 100%;
-}
-
-.ready-to-start .content a {
-    background-color: var(--gold);
-    padding: 12px 24px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 600;
-    text-decoration: none;
-    transition: .3s ease-in;
-    width: fit-content;
-}
-
-.ready-to-start .content a:hover {
-    scale: 0.95;
-}
-
-
 
 /* Why emmviron */
 .why-emmviron {
@@ -524,6 +416,29 @@ hr {
 }
 
 
+/* sample work */
+.sample-work {
+    display: flex;
+    padding: 40px 8%;
+    justify-content: space-between;
+}
+
+.sample-work .content .small-heading {
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.sample-work .video-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.sample-work .video-container video {
+    width: 50%;
+    height: 450px;
+    border-radius: 12px;
+}
 
 
 

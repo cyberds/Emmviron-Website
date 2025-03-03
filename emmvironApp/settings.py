@@ -167,12 +167,17 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'Full',
-        'width': '100%',
+        'toolbar': 'full',
         'height': 300,
+        'width': 700,
+    },
+    'full': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': 700,
+        'extraPlugins': 'youtube,image2,codesnippet',
     },
 }
-
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUD_NAME'),
