@@ -28,6 +28,11 @@
     position: relative;
 }
 
+.blog-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 .recommendations {
     margin-top: 2rem;
 }
