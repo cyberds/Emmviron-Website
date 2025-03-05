@@ -1,11 +1,39 @@
 {% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block additional_head %}
+    <link rel="stylesheet" href="{% static "blog/css/blog_detail.css" %}">
+{% endblock additional_head %}
 
 {% block content %}
-    <div class="blog-detail">
+    <section class="blog-picture">
+        <img src="{% if blog.image %}{{ blog.image.url }}{% else %}{{default_image_url}}{% endif %}" alt="{{ blog.title }}" class="img-fluid">
+    </section>
+    
+    <section class="blog-detail">
+        <p><small>Published on {{ blog.published_on|date:"d F Y" }}  |  {{blog.read_duration}} mins read </small></p>
         <h1>{{ blog.title }}</h1>
-        <p><small>By {{ blog.author }} | Published on {{ blog.published_on }}</small></p>
+        <p>By {{ blog.author }}</p>
         <div class="blog-content">
             {{ blog.content|safe }}
         </div>
-    </div>
+    </section>
+
+    <section class="recommendations container">
+        <h2>Recommended Blogs</h2>
+        <div class="row">
+            {% for blog in recommended_blogs %}
+                <div class="col-md-5">
+                    <div class="card">
+                        <img src="{% if blog.image %}{{ blog.image.url }}{% else %}{{default_image_url}}{% endif %}" alt="{{ blog.title }}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ blog.title|truncatechars:62 }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+    </section>
+
+    {% include "main/includes/ready_to_start.html" %}
+    {% include "main/includes/footer.html" %}
 {% endblock %}

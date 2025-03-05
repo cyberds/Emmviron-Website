@@ -11,6 +11,7 @@ class Tags(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=255)
     content = RichTextField()
+    read_duration = models.IntegerField(default=10, help_text="Enter the read duration in minutes")
     published_on = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True)
     author = models.CharField(max_length=255)
