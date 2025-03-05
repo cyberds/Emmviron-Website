@@ -126,7 +126,7 @@
             {% for card in prices %}
                 <div class="card">
                     <div class="desc">
-                        <p>Basic</p>
+                        <p>{{ card.name }}</p>
                         {% if card.is_popular %}
                             <div class="tag">Most Popular</div>
                         {% endif %}
@@ -194,7 +194,7 @@
         </div>
     </section>
 
-    <section class="sample-work">
+    <section class="sample-work d-none">
         <div class="content">
             <div class="small-heading">Sample Work</div>
             <h1>Business plan for a Lorem ipsum dolor that helps them secure fund</h1>
@@ -209,7 +209,7 @@
     </section>
    
 
-    <section class="videosOnYouTube">
+    <section class="videosOnYouTube d-none">
         <div>
             <h4>Videos on YouTube</h4>
         </div>

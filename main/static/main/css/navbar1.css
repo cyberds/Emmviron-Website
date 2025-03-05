@@ -24,13 +24,13 @@ nav .menu a {
 }
 
 nav a:hover {
-    background: #128AC9;
-    color: white;
+    color: #128AC9;
+    /* color: white; */
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    padding: 8px;
-    margin-top: 5px;
+    /* padding: 8px; */
+    /* margin-top: 5px; */
     transition: ease-in-out 0.6s;
 }
 
@@ -110,7 +110,7 @@ nav a:hover span {
     nav {
         justify-content: space-between;
         justify-self: center;
-        padding: 5%;
+        padding: 20px;
     }
 
     .hamburger {

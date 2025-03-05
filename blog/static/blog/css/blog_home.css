@@ -154,9 +154,17 @@ h1 {
     height: fit-content;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    transition: .3s ease-out;
 }
 
-.blog-item img {
+.blog-list #blog-posts .blog-item:hover {
+    text-decoration: none;
+    color: inherit;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#blog-posts .blog-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -173,4 +181,30 @@ h1 {
 
 .blog-list #blog-posts .blog-item .content small {
     font-size: xx-small;
+}
+
+
+
+
+@media(max-width: 700px) {
+    .hero .hero-block .content * {
+        font-size: x-small;
+    }
+    .hero .hero-block .content * {
+        max-width: 100%;
+    }
+    .hero .hero-block .content ln2 {
+        margin-bottom: 0;
+    }
+
+    .featured-posts {
+        gap: 20px;
+    }
+    .featured-posts .parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .featured-posts .parent .post:nth-child(1) .image {
+        height: 200px;
+    }
 }

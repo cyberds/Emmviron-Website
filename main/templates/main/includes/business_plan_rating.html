@@ -8,12 +8,18 @@
             <img src="https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/woman-with-coffee_11zon.jpeg?updatedAt=1740196183636" alt="Best pitch deck and business consultants in the world">
             <div class="writeup-box">
                 <div class="writeup">
-                    <h4>250+</h4>
-                    <p>Business Plans</p>
-                    <h4>400</h4>
-                    <p>Happy Clients</p>
-                    <h4>5.0</h4>
-                    <p>Ratings</p>
+                    <div class="d-flex">
+                        <h4>250+</h4>
+                        <p>Business Plans</p>
+                    </div>
+                    <div class="d-flex">
+                        <h4>400</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="d-flex">
+                        <h4>5.0</h4>
+                        <p>Ratings</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,6 +34,7 @@
     align-items: center;
     padding: 40px 8%;
     width: 100vw;
+    gap: 20px;
 }
 
 .bus-rating .text,
@@ -79,8 +86,17 @@
     margin-bottom: 12px;
 }
 
+.bus-rating .text p {
+    font-weight: 300;
+}
+
+.bus-rating .writeup-box .writeup .d-flex {
+    flex-direction: column;
+    width: 60px;
+}
+
 .bus-rating .writeup-box .writeup h4 {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 500;
 }
 
@@ -89,6 +105,12 @@
         flex-direction: column;
         gap: 20px;
         padding: 20px;
+    }
+
+    .bus-rating p {
+        margin-bottom: 20px;
+        font-weight: 200;
+        font-size: small;
     }
 
     .bus-rating .text,
@@ -105,10 +127,33 @@
     }
 
     .bus-rating .writeup-box {
-        width: 100%;
-        padding: 5px 10px;
-        display: flex;
+        width: 95%;
         gap: 10px;
+        left: 5px;
+        top: unset;
+        bottom: 5px;
+        font-size: 10px;
+        padding: 5px 10px
+    }
+
+    .bus-rating .writeup-box h4 {
+        font-size: 24px;
+    }
+
+    .bus-rating .writeup-box .writeup {
+        display: flex;
+        font-size: small;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .bus-rating .writeup-box .writeup .d-flex {
+        flex-direction: column;
+        width: 60px;
+    }
+
+    .bus-rating .writeup-box .writeup .d-flex p {
+        margin-bottom: 0;
     }
 }
 

@@ -57,17 +57,17 @@
                 <p>Writers' block. Don't worry, we'll have some available for you to read soon.</p>
             {% endif %}
             {% for blog in blogs %}
-                <div class="blog-item">
+                <a href="{% url 'blog_detail' blog.slug %}" class="blog-item">
                     {% if blog.image %}
                         <img src="{{ blog.image.url }}" alt="{{ blog.title }}">
                     {% else %}
                         <img src="{{default_image_url}}" alt="Default Blog Image">
                     {% endif %}
                     <div class="content">
-                        <h2><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></h2>
+                        <h2>{{ blog.title }}</h2>
                         <p><small>Published on {{ blog.published_on }}</small></p>
                     </div>
-                </div>
+                </a>
             {% endfor %}
         </div>
 
