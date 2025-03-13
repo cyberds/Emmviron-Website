@@ -29,11 +29,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = config('DEBUG')
-DEBUG = True
+DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
     'emmviron.com',
+    'https://www.emmviron.com',
+    'www.emmviron.com',
     'https://emmviron.com',
     'emmviron-website.onrender.com',
     'https://emmviron-website.onrender.com',
@@ -58,7 +59,7 @@ INSTALLED_APPS = [
     'main',
     'cloudinary_storage',
     'cloudinary',
-    
+    "debug_toolbar",   
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,20 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+]
+
+import sentry_sdk
+
+sentry_sdk.init(
+    dsn="https://87854df67e866355e3a42d0678d2ef18@o4508971281154048.ingest.de.sentry.io/4508971283906640",
+    # Add data like request headers and IP for users,
+    # see https://docs.sentry.io/platforms/python/data-management/data-collected/ for more info
+    send_default_pii=True,
+)
+
+INTERNAL_IPS = [ #for debug toolbar
+    "127.0.0.1",
 ]
 
 ROOT_URLCONF = 'emmvironApp.urls'
@@ -154,6 +169,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = 'staticfiles/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
