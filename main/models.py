@@ -58,41 +58,6 @@ class TalenttaFormEntry(models.Model):
         return self.email
 
 
-
-class Contacts(models.Model):
-    SERVICE_CHOICES = (
-        ('business_plan_financial_projection', 'Business Plan + Financial Projection'),
-        ('business_plan_financial_model_pitch_deck', 'Business Plan + Financial Model (Cap Valuation) + Pitch Deck'),
-        ('pitch_deck', 'Pitch Deck'),
-        ('company_profile', 'Company Profile'),
-        ('desktop_market_research', 'Desktop Market Research'),
-        ('primary_market_research', 'Primary Market Research'),
-        ('recruitment', 'Recruitment (We charge lesser than other firms)'),
-        ('talent_management', 'Talent Management'),
-        ('business_proposal', 'Business Proposal'),
-        ('feasibility_study_report', 'Feasibility Study Report'),
-        ('operational_setup', 'Operational Setup'),
-        ('financial_model_alone', 'Financial Model alone'),
-        ('business_training', 'Business Training for Executives/Team Members'),
-        ('business_advisory', 'Business Advisory'),
-        ('others', 'Others (Specify in the Subject)'),
-    )
-
-
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    phone_number = models.CharField(max_length=20)
-    email = models.EmailField()
-    business_name = models.CharField(max_length=200)
-
-    requested_service = models.CharField(max_length=200, choices=SERVICE_CHOICES)
-    subject = models.CharField(max_length=500)
-    message = models.TextField()
-    country = models.CharField(max_length = 500)
-    state = models.CharField(max_length = 500)
-    contacted_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-
-
     def __str__(self):
         return f"{self.first_name} {self.last_name} service: {self.requested_service}"
 
@@ -143,10 +108,53 @@ class Features(models.Model):
 
 class Pricing(models.Model):
     name = models.CharField(max_length=100)
-    price = models.CharField(max_length=20)
+    price = models.CharField(max_length=20, blank=True, null=True)
     description = models.TextField()
     features = models.ManyToManyField(Features)
     is_popular = models.BooleanField(default=False)
+    order = models.PositiveIntegerField(default=1)
 
     def __str__(self):
-        return f"{self.name} ({self.price})"
+        return f"{self.name} ({self.price or 'Not Specified'})"
+    
+
+
+class Contacts(models.Model):
+    SERVICE_CHOICES = (
+        ('business_plan_financial_projection', 'Business Plan + Financial Projection'),
+        ('business_plan_financial_model_pitch_deck', 'Business Plan + Financial Model (Cap Valuation) + Pitch Deck'),
+        ('pitch_deck', 'Pitch Deck'),
+        ('company_profile', 'Company Profile'),
+        ('desktop_market_research', 'Desktop Market Research'),
+        ('primary_market_research', 'Primary Market Research'),
+        ('recruitment', 'Recruitment (We charge lesser than other firms)'),
+        ('talent_management', 'Talent Management'),
+        ('business_proposal', 'Business Proposal'),
+        ('feasibility_study_report', 'Feasibility Study Report'),
+        ('operational_setup', 'Operational Setup'),
+        ('financial_model_alone', 'Financial Model alone'),
+        ('business_training', 'Business Training for Executives/Team Members'),
+        ('business_advisory', 'Business Advisory'),
+        ('others', 'Others (Specify in the Subject)'),
+    )
+
+
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    phone_number = models.CharField(max_length=20)
+    email = models.EmailField()
+    business_name = models.CharField(max_length=200)
+
+    requested_service = models.ForeignKey(Features, on_delete=models.SET_NULL, null=True)
+    subject = models.CharField(max_length=500)
+    message = models.TextField()
+    country = models.CharField(max_length = 500)
+    state = models.CharField(max_length = 500)
+    contacted_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+
+    def __str__(self):
+      return f"{self.first_name} {self.last_name} service: {self.requested_service}"
+
+    class Meta:
+        verbose_name = "Contact"
+        verbose_name_plural = "Contacts"

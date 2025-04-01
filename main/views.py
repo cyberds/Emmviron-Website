@@ -23,7 +23,7 @@ def add_to_mailchimp(first_name, last_name, email, service, subject, message, co
         "merge_fields": {
             "FNAME": first_name,
             "LNAME": last_name,
-            "SERVICE": service,
+            "SERVICE": str(service),
             "SUBJECT": subject,
             "MESSAGE": message,
             "COUNTRY": country,
@@ -41,9 +41,10 @@ def add_to_mailchimp(first_name, last_name, email, service, subject, message, co
 
 
 def home(request):
-    prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
+    # prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
+    packages = Pricing.objects.all().order_by('order')
     context = {
-        'prices': prices
+        'prices': packages
     }
     return render(request, 'main/index.html', context)
 
@@ -85,7 +86,8 @@ def contact(request):
 
 
 def business_plan(request):
-    prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
+    # prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
+    prices = Pricing.objects.all().order_by("order")
     context = {
         'prices': prices
     }

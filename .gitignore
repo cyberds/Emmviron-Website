@@ -2,3 +2,5 @@ venv/
 .env
 staticfiles/
 static/
+docker-compose.yml
+Dockerfile

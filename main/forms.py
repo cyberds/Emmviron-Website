@@ -1,7 +1,12 @@
 from django import forms
-from .models import Contacts, JobApplication
+from .models import Contacts, JobApplication, Features
 
 class ContactForm(forms.ModelForm):
+    requested_service = forms.ModelChoiceField(
+        queryset=Features.objects.all(),
+        empty_label="Select a service",
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
     class Meta:
         model = Contacts
         fields = [
@@ -10,7 +15,6 @@ class ContactForm(forms.ModelForm):
             'message', 'country', 'state'
         ]
         widgets = {
-            'requested_service': forms.Select(attrs={'class': 'form-control'}),
             'message': forms.Textarea(attrs={'rows': 3}),
         }
 
