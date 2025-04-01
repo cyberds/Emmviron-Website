@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
@@ -8,9 +9,13 @@ from django.dispatch import receiver
 class Tags(models.Model):
     name = models.CharField(max_length=255)
 
+    class Meta:
+        verbose_name = "Tag"
+        verbose_name_plural = "Tags"
+
 class Blog(models.Model):
     title = models.CharField(max_length=255)
-    content = RichTextField()
+    content = RichTextUploadingField()
     read_duration = models.IntegerField(default=10, help_text="Enter the read duration in minutes")
     published_on = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True)

@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'heroicons',
     'ckeditor',
+    'ckeditor_uploader',
     'blog',
     'main',
     'cloudinary_storage',
@@ -180,7 +181,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'full',
@@ -192,6 +194,9 @@ CKEDITOR_CONFIGS = {
         'height': 300,
         'width': 700,
         'extraPlugins': 'youtube,image2,codesnippet',
+        'removePlugins': 'image',
+        'image2_alignClasses': ['image-align-left', 'image-align-center', 'image-align-right'],
+        'image2_disableResizer': True,
     },
 }
 

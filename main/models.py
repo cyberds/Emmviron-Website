@@ -83,6 +83,10 @@ class FAQ(models.Model):
 
     def __str__(self):
         return self.question
+    
+    class Meta:
+        verbose_name = "FAQ"
+        verbose_name_plural = "FAQs"
 
 
 class Testimonial(models.Model):
@@ -104,6 +108,10 @@ class Features(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = "Service (Pricing Feature)"
+        verbose_name_plural = "Services (Pricing Features)"
 
 
 class Pricing(models.Model):
@@ -117,27 +125,12 @@ class Pricing(models.Model):
     def __str__(self):
         return f"{self.name} ({self.price or 'Not Specified'})"
     
+    class Meta:
+        verbose_name = "Pricing"
+        verbose_name_plural = "Pricing Plans"
 
 
 class Contacts(models.Model):
-    SERVICE_CHOICES = (
-        ('business_plan_financial_projection', 'Business Plan + Financial Projection'),
-        ('business_plan_financial_model_pitch_deck', 'Business Plan + Financial Model (Cap Valuation) + Pitch Deck'),
-        ('pitch_deck', 'Pitch Deck'),
-        ('company_profile', 'Company Profile'),
-        ('desktop_market_research', 'Desktop Market Research'),
-        ('primary_market_research', 'Primary Market Research'),
-        ('recruitment', 'Recruitment (We charge lesser than other firms)'),
-        ('talent_management', 'Talent Management'),
-        ('business_proposal', 'Business Proposal'),
-        ('feasibility_study_report', 'Feasibility Study Report'),
-        ('operational_setup', 'Operational Setup'),
-        ('financial_model_alone', 'Financial Model alone'),
-        ('business_training', 'Business Training for Executives/Team Members'),
-        ('business_advisory', 'Business Advisory'),
-        ('others', 'Others (Specify in the Subject)'),
-    )
-
 
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)

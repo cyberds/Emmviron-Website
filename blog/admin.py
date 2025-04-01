@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Blog, Tags
 from ckeditor.widgets import CKEditorWidget
+from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from django import forms
 
 class BlogAdminForm(forms.ModelForm):
@@ -8,7 +9,7 @@ class BlogAdminForm(forms.ModelForm):
         model = Blog
         fields = '__all__'
         widgets = {
-            'content': CKEditorWidget(
+            'content': CKEditorUploadingWidget(
                 config_name='full',
                 external_plugin_resources=[(
                     'youtube',

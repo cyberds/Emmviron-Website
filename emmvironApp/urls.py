@@ -24,6 +24,7 @@ def trigger_error(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
     path('blog/', include('blog.urls')),
     path('', include('main.urls')),
     path('sentry-debug/', trigger_error),   
