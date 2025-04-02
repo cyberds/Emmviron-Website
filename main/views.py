@@ -147,3 +147,11 @@ def strategic_business(request):
 
 def talent_n_recruitment(request):
     return render(request, 'main/talent_n_recruitment.html')
+
+
+from django.views.generic.base import TemplateView
+from django.http import HttpResponse
+
+class RobotsTxtView(TemplateView):
+    template_name = "robots.txt"
+    content_type = "text/plain"

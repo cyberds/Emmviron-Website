@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'heroicons',
     'ckeditor',
     'ckeditor_uploader',
@@ -62,6 +64,8 @@ INSTALLED_APPS = [
     'cloudinary',
     # "debug_toolbar",   
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

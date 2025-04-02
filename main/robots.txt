@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emmviron.com/sitemap.xml
