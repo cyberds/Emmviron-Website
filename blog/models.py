@@ -9,6 +9,9 @@ from django.dispatch import receiver
 class Tags(models.Model):
     name = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = "Tag"
         verbose_name_plural = "Tags"
@@ -28,6 +31,8 @@ class Blog(models.Model):
         # Automatically create slug from the title
         if not self.slug:
             self.slug = slugify(self.title)
+        if self.top_rated:
+            Blog.objects.filter(top_rated=True).exclude(id=self.id).update(top_rated=False)
 
         super(Blog, self).save(*args, **kwargs)
 
@@ -36,8 +41,3 @@ class Blog(models.Model):
 
     class Meta:
         ordering = ['-published_on']
-
-@receiver(post_save, sender=Blog)
-def update_top_rated(sender, instance, **kwargs):
-    if instance.top_rated and kwargs.get('created', False) is False:
-        Blog.objects.filter(top_rated=True).exclude(id=instance.id).update(top_rated=False)

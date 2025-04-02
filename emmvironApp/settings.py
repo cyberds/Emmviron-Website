@@ -183,17 +183,36 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_BROWSE_SHOW_DIRS = True
+CKEDITOR_RESTRICT_BY_DATE = True
+CKEDITOR_ALLOW_NONIMAGE_FILES = True
+CKEDITOR_STORAGE_BACKEND = 'blog.storage.CKEditorCloudinaryStorage'
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'full',
         'height': 300,
         'width': 700,
+        'extraPlugins': 'uploadimage,image2',
+        'removePlugins': 'image',
+        'uploadUrl': '/ckeditor/upload/',
+        'filebrowserUploadUrl': '/ckeditor/upload/',
+        'filebrowserBrowseUrl': '/ckeditor/browse/',
     },
     'full': {
-        'toolbar': 'full',
+        'toolbar': [
+            ['Styles', 'Format', 'Bold', 'Italic', 'Underline', 'Strike', 'SpellChecker', 'Undo', 'Redo'],
+            ['Link', 'Unlink', 'Anchor'],
+            ['Image', 'UploadImage', 'Flash', 'Table', 'HorizontalRule'],
+            ['TextColor', 'BGColor'],
+            ['Smiley', 'SpecialChar'], ['Source'],
+            ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['NumberedList', 'BulletedList'],
+            ['Indent', 'Outdent'],
+            ['Maximize'],
+        ],
         'height': 300,
         'width': 700,
-        'extraPlugins': 'youtube,image2,codesnippet',
+        'extraPlugins': 'uploadimage,image2,justify,colorbutton,find,selectall,youtube',
         'removePlugins': 'image',
         'image2_alignClasses': ['image-align-left', 'image-align-center', 'image-align-right'],
         'image2_disableResizer': True,
@@ -212,6 +231,8 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 if DEBUG:
     STATIC_ROOT = BASE_DIR / "staticfiles"
+
+SILENCED_SYSTEM_CHECKS = ["ckeditor.W001"]
 
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

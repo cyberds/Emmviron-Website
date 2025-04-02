@@ -43,9 +43,12 @@ def add_to_mailchimp(first_name, last_name, email, service, subject, message, co
 def home(request):
     # prices = sorted(Pricing.objects.all(), key=lambda x: int(x.price.replace('$', '').replace(',', '')))
     packages = Pricing.objects.all().order_by('order')
+    from blog.models import Blog
+    blogs = Blog.objects.all().order_by('-published_on')[:4]  # Get the latest 3 blog posts
     context = {
-        'prices': packages
-    }
+        'prices': packages,
+        'blogs': blogs,
+        }
     return render(request, 'main/index.html', context)
 
 def about(request):

@@ -145,7 +145,7 @@ hr {
 }
 
 .impact3mobile {
-    background-color: rgb(73, 106, 241);
+    background-color: #496af1;
     padding: 20px;
     font-size: 13px;
     display: none !important;
@@ -528,7 +528,6 @@ hr {
 }
 
 .newsholder {
-    font-weight: bolder;
     font-size: small;
     gap: 20px;
 }
@@ -547,31 +546,25 @@ hr {
 }
 
 .eachnewsholder p {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .newsIMG {
     border-radius: 14px;
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    object-position: center;
+    background: url('https://ik.imagekit.io/s3jkgwyie/Emmviron%20New%20Website%20Files/Emmviron%20emblem%20on%20dark%20background?updatedAt=1743600417829') no-repeat;
+    background-color: #00599B;
     background-size: cover !important;
     background-position: center !important;
 }
 
-#newsIMG1 {
-    background: url('https://ik.imagekit.io/s3jkgwyie/8fe8ff81a624bdf066635b18cff0d8e8.png?updatedAt=1703351095849');
-}
-
-#newsIMG2 {
-    background: url('https://ik.imagekit.io/s3jkgwyie/5dfd9f242dfc8afcce60722521c5bfb1.png?updatedAt=1703351139301');
-}
-
-#newsIMG3 {
-    background: url('https://ik.imagekit.io/s3jkgwyie/c8e75fa0764bf03bd1aaad884ab37e16.png?updatedAt=1703351143115');
-}
-
-#newsIMG4 {
-    background: url('https://ik.imagekit.io/s3jkgwyie/Ogun%20Business%20Summit.jpeg?updatedAt=1703165880673');
+.newsandevents .see-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .forvideos {

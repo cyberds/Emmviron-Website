@@ -5,7 +5,7 @@ class ContactForm(forms.ModelForm):
     requested_service = forms.ModelChoiceField(
         queryset=Features.objects.all(),
         empty_label="Select a service",
-        widget=forms.Select(attrs={'class': 'form-control'})
+        widget=forms.Select(attrs={'class': 'form-control'}) 
     )
     class Meta:
         model = Contacts
@@ -15,7 +15,11 @@ class ContactForm(forms.ModelForm):
             'message', 'country', 'state'
         ]
         widgets = {
-            'message': forms.Textarea(attrs={'rows': 3}),
+            'message': forms.Textarea(attrs={
+                'rows': 3, 
+                'class': 'form-control',
+                'style': 'min-height: 100px;'
+                }),
         }
 
 
