@@ -145,7 +145,7 @@
                     <h2>{{ card.price }}</h2>
                     {% endif %}
                     <p>{{ card.description }}</p>
-                    <a href="#">Request Invoice</a>
+                    <a href="{% url 'schedule_meeting' card.id %}">Schedule a meeting</a>
                     <div class="features">
                         <div class="line"></div>
                         <div class="text">FEATURES</div>

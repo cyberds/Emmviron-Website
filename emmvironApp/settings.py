@@ -165,6 +165,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+CALENDLY_URL = config('CALENDLY_URL', default='https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JKXHdv2agExlkyFEtZFtl4yCO75ftn2C4P80FJ_2scD_FwCd3HWgEqxSgy49CWvchZa6LjCm7?gv=true')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -183,8 +184,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_FORCE_JPEG_COMPRESSION = True
+CKEDITOR_IMAGE_QUALITY = 90
 CKEDITOR_BROWSE_SHOW_DIRS = True
-CKEDITOR_RESTRICT_BY_DATE = True
 CKEDITOR_ALLOW_NONIMAGE_FILES = True
 CKEDITOR_STORAGE_BACKEND = 'blog.storage.CKEditorCloudinaryStorage'
 CKEDITOR_CONFIGS = {
@@ -216,6 +218,16 @@ CKEDITOR_CONFIGS = {
         'removePlugins': 'image',
         'image2_alignClasses': ['image-align-left', 'image-align-center', 'image-align-right'],
         'image2_disableResizer': True,
+        'clipboard_handleImages': True,
+        'image2_prefillDimensions': False,
+        'removeDialogTabs': 'image:advanced;link:advanced',
+        'allowedContent': True,
+        'pasteFromWordPromptCleanup': True,
+        'pasteFromWordRemoveFontStyles': False,
+        'pasteFromWordRemoveStyles': False,
+        'uploadUrl': '/ckeditor/upload/',
+        'filebrowserUploadUrl': '/ckeditor/upload/',
+        'filebrowserBrowseUrl': '/ckeditor/browse/',
     },
 }
 

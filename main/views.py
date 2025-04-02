@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import ContactForm, JobApplicationForm
@@ -46,7 +47,7 @@ def home(request):
     from blog.models import Blog
     blogs = Blog.objects.all().order_by('-published_on')[:4]  # Get the latest 3 blog posts
     context = {
-        'prices': packages,
+        # 'prices': packages,
         'blogs': blogs,
         }
     return render(request, 'main/index.html', context)
@@ -96,10 +97,17 @@ def business_plan(request):
     }
     return render(request, 'main/business_plan.html', context)
 
-def career(request):
-    jobs = JobOpening.objects.filter(is_active=True)
+def schedule_meeting(request, plan_id):
+    plan = get_object_or_404(Pricing, id=plan_id)
+    context = {
+        'plan': plan,
+        'calendly_url': settings.CALENDLY_URL
+    }
+    return render(request, 'main/schedule_meeting.html', context)
 
-    return render(request, 'main/career.html', {'jobs': jobs})
+def career(request):
+    messages.info(request, "We've now moved our jobs to our partners at Talentta for a better experience")
+    return render(request, 'main/redirect.html')
 
 def job_application(request, id):
     job = get_object_or_404(JobOpening, id=id)

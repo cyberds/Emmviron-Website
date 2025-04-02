@@ -1,0 +1,47 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block title %}Schedule Meeting - {{ plan.name }}{% endblock %}
+
+{% block additional_head %}
+    <link rel="stylesheet" href="{% static 'main/css/schedule.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+{% block content %}
+<section class="schedule-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="plan-details">
+                    <h2>{{ plan.name }}</h2>
+                    <div class="price">
+                        {{ plan.price }}
+                        <span style="font-size: 16px; color: #64748b; font-weight: normal; margin-left: 4px;">
+                            USD
+                        </span>
+                    </div>
+                    <div class="description">
+                        {{ plan.description }}
+                    </div>
+                    <div class="features">
+                        <h3>What's included:</h3>
+                        <ul>
+                            {% for feature in plan.features.all %}
+                            <li>{{ feature.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="calendly-inline-widget" 
+                     data-url="{{ calendly_url }}?hide_gdpr_banner=1&background_color=ffffff&primary_color=496AF1"
+                     style="min-width:320px;height:700px;">
+                </div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

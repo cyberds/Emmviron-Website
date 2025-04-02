@@ -1,0 +1,73 @@
+{% extends "main/includes/base.html" %}
+{% load static %}
+
+{% block title %}Redirecting to Talentta{% endblock %}
+
+{% block content %}
+<div class="redirect-container">
+    <div class="redirect-message">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        <p>Redirecting you to Talentta in <span id="countdown">3</span> seconds...</p>
+        <a href="https://talentta.africa/find-a-job" class="btn btn-primary">Go to Talentta now</a>
+    </div>
+</div>
+
+<script>
+    let count = 3;
+    const countdown = document.getElementById('countdown');
+    const timer = setInterval(() => {
+        count--;
+        countdown.textContent = count;
+        if (count <= 0) {
+            clearInterval(timer);
+            window.location.href = 'https://talentta.africa';
+        }
+    }, 1000);
+</script>
+{% endblock %}
+
+{% block additional_head %}
+<style>
+    .redirect-container {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }
+    .redirect-message {
+        max-width: 600px;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    }
+    .alert {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        background: #e3efff;
+        color: #1a1f36;
+    }
+    .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        background: #496AF1;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+    .btn:hover {
+        background: #3451c6;
+    }
+</style>
+{% endblock %}
